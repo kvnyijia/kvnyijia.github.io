@@ -1,5 +1,6 @@
 ---
 title: Archive
+isArchive: y
 ---
 
-There is no post...
+

@@ -20,6 +20,9 @@
 
         <main role="main">
             <h1>$title$</h1>
+            $if(isArchive)$
+                $partial("templates/post-list.html")$
+            $endif$
             $body$
         </main>
 
