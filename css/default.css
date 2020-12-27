@@ -1,14 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  font-size: 62.5%;
+  font-size: 65%;
 }
 
 body {
+  margin: 0 auto;
   font-size: 1.6rem;
-  color: #000;
+  font-family: Georgia;
+  color: #292929;
 }
 
 header {
-  border-bottom: 0.2rem solid #000;
+  margin: 0;
+  text-align: center;
 }
 
 nav {
@@ -24,37 +31,87 @@ nav a {
 }
 
 footer {
-  margin-top: 3rem;
-  padding: 1.2rem 0;
-  border-top: 0.2rem solid #000;
-  font-size: 1.2rem;
-  color: #555;
+  padding: 10px;
+  color: white;
+  background: grey;
+  text-align: left;
+}
+
+.article-heading {
+  height: 600px;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #47616e;
+}
+
+h1.article-heading {
+  padding-top: 300px;
 }
 
 h1 {
-  font-size: 2.4rem;
+  margin: 0;
+  font-size: 3rem;
+  font-style: normal;
 }
 
 h2 {
   font-size: 2rem;
+  font-style: normal;
+  color: black;
 }
 
+blockquote {
+  margin: 0 1rem 0 0;
+  padding: 0.0625rem 2rem;
+  border-left: 0.3rem solid #c2d994;
+}
+
+code {
+  margin: 3px;
+  color: black;
+  background-color: #f2f2f2;
+}
+
+pre {
+  margin: 3px;
+  padding: 5px;
+  background-color: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Post info */
 article .header {
   font-size: 1.4rem;
   font-style: italic;
   color: #555;
 }
 
+/* Blog Title */
 .logo a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
 
+a {
+  color: mediumseagreen;
+  text-decoration: none;
+}
+
 @media (max-width: 319px) {
   body {
-    width: 90%;
-    margin: 0;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  main {
     padding: 0 5%;
   }
   header {
@@ -82,8 +139,11 @@ article .header {
 
 @media (min-width: 320px) {
   body {
-    width: 90%;
-    margin: 0;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  main {
     padding: 0 5%;
   }
   header {
@@ -111,13 +171,17 @@ article .header {
 
 @media (min-width: 640px) {
   body {
-    width: 60rem;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
   }
+  main {
+    margin: auto;
+    width: 65%;
+  }
   header {
-    margin: 0 0 3rem;
-    padding: 1.2rem 0;
+    margin: 0;
+    padding: 1.5rem;
   }
   nav {
     margin: 0;
@@ -128,7 +192,7 @@ article .header {
     display: inline;
   }
   footer {
-    text-align: right;
+    text-align: left;
   }
   .logo {
     margin: 0;

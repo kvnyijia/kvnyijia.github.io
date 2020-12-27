@@ -12,7 +12,7 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
     
-    match "posts/*" $ do
+    match "archive/*" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
@@ -28,7 +28,7 @@ main = hakyll $ do
     match "menu/archive.md" $ do
         route   $ gsubRoute "menu/" (const "") `composeRoutes` setExtension "html"
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
+            posts <- recentFirst =<< loadAll "archive/*"
             let archiveCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     defaultContext
