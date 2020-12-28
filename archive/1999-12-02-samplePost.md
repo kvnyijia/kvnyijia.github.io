@@ -24,6 +24,8 @@ Noël [^second]
 | a        | b        | c        |
 | $24      | $100     | $699     |
 
+Table:  Demonstration of simple table syntax.
+
 [:first]: brabrabra
 [:second]: Christmas
 
@@ -37,7 +39,7 @@ Noël [^second]
     * c
 * Wmd eww qwdm [yt](https://www.youtube.com/) qwjn eq. 
 * qjn mec 3dm wefp edqw.
-* wkemcw.
+* wkemcw. :smile:
 * 19^th^ century
     1. x
        * description
@@ -56,13 +58,31 @@ int sum(int n, int A[n])
 ```
 ## Cat Theorem
 ***
-$a=b+c$
+Given $a=b+c$, then $a$ blablabla $b \iff c$ wmfwoe:
 
-$x = \frac{x}{y}$
+$x = gg + \dfrac{x}{y}$
 
-$y = \sum_{i=0}^{n}$
+$$x = gg + \dfrac{x}{y}$$
 
-$\forall x \in R$
+\(x = ff + \frac{x}{y}\)
+\[x = ff + \frac{x}{y}\]
+
+$$y = \sum_{i=0}^{n}n_i$$
+
+$$\forall x \in \mathbb{R}$$
+
+$\forall a \in \mathbb{N}$
+
+$$\begin{split}
+\Gamma &\vdash \bot                     \\
+\rule{1cm}{0.4pt}&\rule{3cm}{0.4pt}     \\
+\Gamma &\vdash \psi, \phi
+\end{split}$$
+
+$$\delta(R) = \begin{cases} 
+\epsilon,\ if\ \epsilon \in R           \\
+\emptyset,\ if\ \epsilon \notin R       \\
+\end{cases}$$
 
 ## Paragraph
 ***
