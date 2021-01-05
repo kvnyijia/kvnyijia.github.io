@@ -58,9 +58,15 @@ h1 {
 }
 
 h2 {
+  margin-top: 5rem;
+  margin-bottom: 0;
   font-size: 2rem;
   font-style: normal;
   color: black;
+}
+
+hr {
+  margin-top: 0.5rem;
 }
 
 blockquote {
@@ -84,6 +90,31 @@ pre {
 img {
   max-width: 100%;
   height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+
+th, td {
+  padding: 1.5rem 2rem;
+  border: 0.05rem solid #dddddd;
+}
+
+th {
+  font-style: normal;
+  color: #000000;
+}
+
+tr.even {
+  background-color: #f8f8f8;
+}
+
+caption {
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  color: #555;
 }
 
 /* Post info */

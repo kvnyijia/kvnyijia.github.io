@@ -19,10 +19,12 @@ wdnqwmdkqwmdoqw [^first]
 Noël [^second]
 
 #### jj
-| Column 1 | Column 2 | Column 3 |
-|--------- |--------- |--------- |
-| a        | b        | c        |
-| $24      | $100     | $699     |
+| Column 1 | Column 2 | Column 3 | Column 1 | Column 2 | Column 3 | Column 1 | Column 2 | Column 3 |
+|:-------- |:-------- |:-------- |:-------- |:-------- |:-------- |:-------- |:-------- |:-------- |
+| a        | b        | c        | a        | b        | c        | a        | b        | c        |
+| $24      | $100     | $699     | $24      | $100     | $699     | $24      | $100     | $699     |
+| n        | m        | o        | n        | m        | o        | n        | m        | o        |
+| xxxx     | yyyy     | zzzz     | xxxx     | yyyy     | zzzz     | xxxx     | yyyy     | zzzz     |
 
 Table:  Demonstration of simple table syntax.
 
