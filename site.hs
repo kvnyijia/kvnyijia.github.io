@@ -5,6 +5,10 @@ import           Text.Pandoc.Options        -- For customized Pandoc options
 
 main :: IO ()
 main = hakyll $ do
+    match "assets/*" $ do
+        route   $ idRoute
+        compile $ copyFileCompiler
+    
     match "images/*" $ do
         route   $ idRoute
         compile $ copyFileCompiler
