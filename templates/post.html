@@ -1,11 +1,21 @@
 <article>
     <section class="header">
-        $if(author)$
-            $author$ ·
-        $endif$
+    $if(author)$
+        $author$ ·
+    $endif$
         $date$
     </section>
+    
     <section>
         $body$
+    </section>
+    
+    <section>
+        <ul class="tags">
+        $for(tags)$
+            <li class="tags"><code>$tagElement$</code></li>
+        $endfor$
+        </ul>
+        <hr>
     </section>
 </article>

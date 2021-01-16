@@ -9,7 +9,7 @@ html {
 body {
   margin: 0 auto;
   font-size: 1.6rem;
-  font-family: Georgia;
+  font-family: Georgia, serif;
   color: #292929;
 }
 
@@ -39,7 +39,7 @@ footer {
 
 .article-heading {
   height: 600px;
-  margin: 0 0 1rem 0;
+  margin: 0;
   padding: 0;
   font-size: 3rem;
   color: #ffffff;
@@ -58,7 +58,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 0;
   font-size: 2rem;
   font-style: normal;
@@ -73,11 +73,13 @@ blockquote {
   margin: 0 1rem 0 0;
   padding: 0.0625rem 2rem;
   border-left: 0.3rem solid #c2d994;
+  color: #777777;
 }
 
 code {
-  margin: 3px;
-  color: black;
+  padding: 3px 5px;
+  font-family: Consolas, Courier, 'Courier New', monospace;
+  color: #777777;
   background-color: #f2f2f2;
 }
 
@@ -119,6 +121,7 @@ caption {
 
 /* Post info */
 article .header {
+  margin: 3rem 0;
   font-size: 1.4rem;
   font-style: italic;
   color: #555;
@@ -134,6 +137,16 @@ article .header {
 a {
   color: mediumseagreen;
   text-decoration: none;
+}
+
+ul.tags  {
+  padding: 3rem 0 3rem 0;
+  list-style-type: none;
+}
+
+li.tags {
+  padding-right: 0.5rem;
+  float: left;
 }
 
 @media (max-width: 319px) {

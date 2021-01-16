@@ -1,4 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
+import           Data.String (fromString)
 import           Data.Monoid (mappend)
 import           Hakyll
 import           Text.Pandoc.Options        -- For customized Pandoc options
@@ -57,7 +58,25 @@ main = hakyll $ do
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
+    tagsCtx                      `mappend`
     defaultContext
+
+-- Create a context containing $tags$ (which is a listField)
+    -- listFieldWith :: String -> Context a -> (Item b -> Compiler [Item a]) -> Context b
+        -- Creates a list field like listField, but supplies the current page (i.e item) to the compiler
+    -- getMetadataField :: MonadMetadata m => Identifier -> String -> m (Maybe String)
+        -- Get the content of corresponding field
+tagsCtx :: Context String
+tagsCtx = listFieldWith "tags" tagElementCtx getTags
+    where tagElementCtx = field "tagElement" (return . itemBody)
+          getTags = (\item -> do
+              tags <- getMetadataField (itemIdentifier item) "tags"
+              return $ case tags of
+                  Just lst -> map mkItem $ splitAll "," lst
+                  Nothing  -> [] )
+              where mkItem tagElement = Item {
+                  itemIdentifier = fromString tagElement,
+                  itemBody       = '#' : tagElement }
 
 -- Customize Pandoc options
 customReaderOptions = defaultHakyllReaderOptions
