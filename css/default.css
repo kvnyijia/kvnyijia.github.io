@@ -8,13 +8,12 @@ html {
 
 body {
   margin: 0 auto;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: Georgia, serif;
   color: #292929;
 }
 
 header {
-  margin: 0;
   text-align: center;
 }
 
@@ -91,6 +90,7 @@ blockquote {
 
 code {
   padding: 3px 5px;
+  font-size: 1.6rem;
   font-family: Consolas, Courier, 'Courier New', monospace;
   color: #777777;
   background-color: #f2f2f2;
@@ -143,13 +143,38 @@ li.tags {
 }
 
 footer {
-  padding: 10px;
   color: white;
-  background: grey;
+  background: #506268;
   text-align: left;
 }
 
+.footer {
+  padding: 3rem 5% 1rem 5%;    /* 5% is used to match main's default padding */
+  margin: auto;
+  width: 110rem;               /* To match main's width */
+  font-size: 1.4rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer h4 {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+.footer ul {
+  padding-left: 0;
+  padding-bottom: 3rem;
+  list-style-type: none;
+}
+
+.footer p {
+  color: #dddddd;
+}
+
 @media (max-width: 319px) {
+  html {
+    font-size: 55%;
+  }
   body {
     width: 100%;
     margin: auto;
@@ -166,7 +191,7 @@ footer {
     text-align: center;
   }
   footer {
-    text-align: center;
+    text-align: left;
   }
   .logo {
     text-align: center;
@@ -198,7 +223,7 @@ footer {
     text-align: center;
   }
   footer {
-    text-align: center;
+    text-align: left;
   }
   .logo {
     text-align: center;
@@ -221,14 +246,14 @@ footer {
   }
   main {
     margin: auto;
-    width: 65%;
+    width: 110rem;
   }
   header {
     margin: 0;
     padding: 1.5rem;
   }
   nav {
-    margin: 0;
+    margin: 0 20rem 0 0;
     text-align: right;
   }
   nav a {
@@ -239,7 +264,7 @@ footer {
     text-align: left;
   }
   .logo {
-    margin: 0;
+    margin: 0 0 0 20rem;
     text-align: left;
   }
   .logo a {

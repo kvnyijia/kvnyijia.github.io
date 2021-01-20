@@ -37,7 +37,7 @@ main = hakyll $ do
                 >>= relativizeUrls
     
     match "menu/archive.md" $ do
-        route   $ gsubRoute "menu/" (const "") `composeRoutes` setExtension "html"
+        route   $ constRoute "archive/index.html"
         compile $ do
             posts <- recentFirst =<< loadAll "archive/*"
             let archiveCtx =
