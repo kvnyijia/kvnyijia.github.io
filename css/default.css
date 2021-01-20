@@ -100,6 +100,7 @@ pre {
   margin: 3px;
   padding: 5px;
   background-color: #f2f2f2;
+  overflow-y: scroll;
 }
 
 img {
@@ -108,7 +109,9 @@ img {
 }
 
 table {
+  overflow-y: scroll;
   border-collapse: collapse;
+  display: block;
   caption-side: bottom;
 }
 
@@ -132,13 +135,18 @@ caption {
   color: #555;
 }
 
+article .tags-sec {
+  margin: 5rem 0 12rem 0;
+}
+
 ul.tags  {
-  padding: 3rem 0 3rem 0;
+  padding: 0;
   list-style-type: none;
 }
 
 li.tags {
-  padding-right: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
   float: left;
 }
 
@@ -151,7 +159,6 @@ footer {
 .footer {
   padding: 3rem 5% 1rem 5%;    /* 5% is used to match main's default padding */
   margin: auto;
-  width: 110rem;               /* To match main's width */
   font-size: 1.4rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -270,5 +277,8 @@ footer {
   .logo a {
     float: left;
     font-size: 1.8rem;
+  }
+  .footer {
+    width: 110rem;               /* To match main's width */
   }
 }
