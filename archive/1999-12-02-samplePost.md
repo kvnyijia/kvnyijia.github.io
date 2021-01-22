@@ -5,6 +5,10 @@ tags: testing,markdown,pandoc,hakyll,haskell,blog
 ---
 First line
 
+`long long long long long long long long long code`:
+
+wekjdw qwk de dlq edqwdkm.
+
 > First quote.
 
 >> Second quote.

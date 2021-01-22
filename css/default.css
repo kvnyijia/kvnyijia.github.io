@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   font-size: 1.8rem;
   font-family: Georgia, serif;
-  color: #292929;
+  color: #555555;
 }
 
 header {
@@ -48,14 +48,21 @@ nav a {
 
 h1.article-heading {
   padding-top: 300px;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
 }
 
 /* Post info */
 article .header {
   margin: 3rem 0;
   font-size: 1.4rem;
-  font-style: italic;
-  color: #555;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: #aeaeae;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #292929;
 }
 
 h1 {
@@ -69,7 +76,6 @@ h2 {
   margin-bottom: 0;
   font-size: 2rem;
   font-style: normal;
-  color: black;
 }
 
 hr {
@@ -81,11 +87,16 @@ a {
   text-decoration: none;
 }
 
+li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 blockquote {
   margin: 0 1rem 0 0;
   padding: 0.0625rem 2rem;
   border-left: 0.3rem solid #c2d994;
-  color: #777777;
+  color: #a1a1a1;
 }
 
 code {
@@ -136,7 +147,7 @@ caption {
 }
 
 article .tags-sec {
-  margin: 5rem 0 12rem 0;
+  margin: 5rem 0 13rem 0;
 }
 
 ul.tags  {
@@ -166,12 +177,17 @@ footer {
 .footer h4 {
   margin-bottom: 1rem;
   font-size: 1.7rem;
+  color: white;
 }
 
 .footer ul {
   padding-left: 0;
   padding-bottom: 3rem;
   list-style-type: none;
+}
+
+.footer li {
+  padding: 0;
 }
 
 .footer p {

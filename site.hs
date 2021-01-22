@@ -57,7 +57,7 @@ main = hakyll $ do
 -- Create a context containing $date$ field for posts
 postCtx :: Context String
 postCtx =
-    dateField "date" "%B %e, %Y" `mappend`
+    dateField "date" "%b %e, %Y" `mappend`
     tagsCtx                      `mappend`
     defaultContext
 
