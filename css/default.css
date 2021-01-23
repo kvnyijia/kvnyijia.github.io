@@ -1,3 +1,7 @@
+:root {
+  --main-width: 90rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,26 +16,23 @@ body {
   font-family: Georgia, serif;
   color: #555555;
 }
-
+/* 
 header {
-  text-align: center;
+  
 }
+*/
 
 /* Blog Title */
 .logo a {
   font-weight: bold;
-  color: #000;
+  color: #292929;
   text-decoration: none;
-}
-
-nav {
-  text-align: right;
 }
 
 nav a {
   font-size: 1.8rem;
   font-weight: bold;
-  color: black;
+  color: #292929;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -147,7 +148,7 @@ caption {
 }
 
 article .tags-sec {
-  margin: 5rem 0 13rem 0;
+  margin-top: 5rem;
 }
 
 ul.tags  {
@@ -158,7 +159,7 @@ ul.tags  {
 li.tags {
   padding-right: 1rem;
   padding-bottom: 1rem;
-  float: left;
+  display: inline-block;
 }
 
 footer {
@@ -168,7 +169,8 @@ footer {
 }
 
 .footer {
-  padding: 3rem 5% 1rem 5%;    /* 5% is used to match main's default padding */
+  padding-top: 3rem;
+  padding-bottom: 1rem;
   margin: auto;
   font-size: 1.4rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -227,6 +229,10 @@ footer {
     display: block;
     line-height: 1.6;
   }
+  .footer {
+    padding-right: 5%;    /* 5% is used to match main's default padding */
+    padding-left: 5%;
+  }
 }
 
 @media (min-width: 320px) {
@@ -259,6 +265,10 @@ footer {
     display: inline;
     margin: 0 0.6rem;
   }
+  .footer {
+    padding-right: 5%;           /* 5% is used to match main's default padding */
+    padding-left: 5%;
+  }
 }
 
 @media (min-width: 640px) {
@@ -269,14 +279,16 @@ footer {
   }
   main {
     margin: auto;
-    width: 110rem;
+    padding: 0;                  /* Default padding is 5% */
+    width: var(--main-width);
   }
   header {
     margin: 0;
     padding: 1.5rem;
   }
   nav {
-    margin: 0 20rem 0 0;
+    margin: auto;
+    width: var(--main-width);
     text-align: right;
   }
   nav a {
@@ -287,7 +299,8 @@ footer {
     text-align: left;
   }
   .logo {
-    margin: 0 0 0 20rem;
+    margin: auto;
+    width: var(--main-width);
     text-align: left;
   }
   .logo a {
@@ -295,6 +308,8 @@ footer {
     font-size: 1.8rem;
   }
   .footer {
-    width: 110rem;               /* To match main's width */
+    padding-right: 0;
+    padding-left: 0;
+    width: var(--main-width);    /* To match main's width */
   }
 }
