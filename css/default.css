@@ -16,25 +16,27 @@ body {
   font-family: Georgia, serif;
   color: #555555;
 }
-/* 
-header {
-  
-}
-*/
 
-/* Blog Title */
-.logo a {
-  font-weight: bold;
-  color: #292929;
-  text-decoration: none;
+header {
+  background-color: #e7e8ea;
+}
+
+nav {
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 nav a {
-  font-size: 1.8rem;
+  padding: 1rem 0;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #292929;
   text-decoration: none;
-  text-transform: uppercase;
+  display: inline-block;
+}
+
+nav a:not(:first-child) {
+  float: right;
 }
 
 .article-heading {
@@ -208,26 +210,28 @@ footer {
   main {
     padding: 0 5%;
   }
-  header {
-    margin: 4.2rem 0;
-  }
-  nav {
-    margin: 0 auto 3rem;
-    text-align: center;
-  }
   footer {
     text-align: left;
   }
-  .logo {
-    text-align: center;
-    margin: 1rem auto 3rem;
+  nav a:not(:first-child) {
+    display: none;
   }
-  .logo a {
-    font-size: 2.4rem;
-  }
-  nav a {
+  .topnav a.icon {
+    float: right;
     display: block;
-    line-height: 1.6;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 5%;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
   .footer {
     padding-right: 5%;    /* 5% is used to match main's default padding */
@@ -244,26 +248,28 @@ footer {
   main {
     padding: 0 5%;
   }
-  header {
-    margin: 4.2rem 0;
-  }
-  nav {
-    margin: 0 auto 3rem;
-    text-align: center;
-  }
   footer {
     text-align: left;
   }
-  .logo {
-    text-align: center;
-    margin: 1rem auto 3rem;
+  nav a:not(:first-child) {
+    display: none;
   }
-  .logo a {
-    font-size: 2.4rem;
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
-  nav a {
-    display: inline;
-    margin: 0 0.6rem;
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 5%;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
   .footer {
     padding-right: 5%;           /* 5% is used to match main's default padding */
@@ -282,30 +288,20 @@ footer {
     padding: 0;                  /* Default padding is 5% */
     width: var(--main-width);
   }
-  header {
-    margin: 0;
-    padding: 1.5rem;
-  }
   nav {
     margin: auto;
+    padding: 0;                  /* No need to have padding 5% on desktops */
     width: var(--main-width);
-    text-align: right;
   }
-  nav a {
-    margin: 0 0 0 1.2rem;
+  nav a:not(:first-child) {
+    padding-left: 1.5rem;
     display: inline;
+  }
+  .topnav a.icon {
+    display: none;
   }
   footer {
     text-align: left;
-  }
-  .logo {
-    margin: auto;
-    width: var(--main-width);
-    text-align: left;
-  }
-  .logo a {
-    float: left;
-    font-size: 1.8rem;
   }
   .footer {
     padding-right: 0;

@@ -7,19 +7,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>$if(home)$ kevin110604 $else$ $title$ | kevin110604 $endif$</title>
         <link rel="stylesheet" href="/css/default.css" />
+        <!-- For navigation bar's icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            function toggleFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
 
         <header>
-            <div class="logo">
+            <nav class="topnav" id="myTopnav">
                 <a href="/">kevin110604’s blog</a>
-            </div>
-            <nav>
                 <a href="/about.html">About</a>
                 <a href="/archive/">Archive</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </nav>
         </header>
 
