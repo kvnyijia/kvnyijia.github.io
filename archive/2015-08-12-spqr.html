@@ -7,8 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> S.P.Q.R. | kevin110604 </title>
         <link rel="stylesheet" href="../css/default.css" />
-        <!-- For navigation bar's icon -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- For icons -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     </head>
 
     <body>
@@ -17,21 +17,21 @@
         <script>
             function toggleFunction() {
               var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
+              if (x.className === "") {
+                x.className += "responsive";
               } else {
-                x.className = "topnav";
+                x.className = "";
               }
             }
         </script>
 
         <header>
-            <nav class="topnav" id="myTopnav">
+            <nav id="myTopnav">
                 <a href="../">kevin110604’s blog</a>
                 <a href="../about.html">About</a>
                 <a href="../archive/">Archive</a>
                 <a href="javascript:void(0);" class="icon" onclick="toggleFunction()">
-                    <i class="fa fa-bars"></i>
+                    <i class="fas fa-bars"></i>
                 </a>
             </nav>
         </header>
