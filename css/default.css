@@ -19,10 +19,14 @@ body {
 
 header {
   background-color: #e7e8ea;
+  /* The code below will make the header sticky */
+  position: sticky;
+  top: 0;
+  z-index: 1;          /* To aviod conflict with MathJax */
 }
 
 nav {
-  padding-right: 5%;
+  /* padding-right: 5%; */
   padding-left: 5%;
 }
 
@@ -37,6 +41,11 @@ nav a {
 
 nav a:not(:first-child) {
   float: right;
+}
+
+nav a.icon {
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .article-heading {
@@ -159,8 +168,8 @@ ul.tags  {
 }
 
 li.tags {
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+  padding-right: 0.1rem;
+  padding-bottom: 0.1rem;
   display: inline-block;
 }
 
@@ -216,19 +225,19 @@ footer {
   nav a:not(:first-child) {
     display: none;
   }
-  .topnav a.icon {
+  nav a.icon {
     float: right;
     display: block;
   }
-  .topnav.responsive {
+  nav.responsive {
     position: relative;
   }
-  .topnav.responsive .icon {
+  nav.responsive a.icon {
     position: absolute;
-    right: 5%;
+    right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  nav.responsive a {
     float: none;
     display: block;
     text-align: left;
@@ -254,19 +263,19 @@ footer {
   nav a:not(:first-child) {
     display: none;
   }
-  .topnav a.icon {
+  nav a.icon {
     float: right;
     display: block;
   }
-  .topnav.responsive {
+  nav.responsive {
     position: relative;
   }
-  .topnav.responsive .icon {
+  nav.responsive a.icon {
     position: absolute;
-    right: 5%;
+    right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  nav.responsive a {
     float: none;
     display: block;
     text-align: left;
@@ -297,7 +306,7 @@ footer {
     padding-left: 1.5rem;
     display: inline;
   }
-  .topnav a.icon {
+  nav a.icon {
     display: none;
   }
   footer {
