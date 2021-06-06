@@ -1,4 +1,11 @@
 
+## Prerequisite
+
+```bash
+$ brew install ghc
+$ brew install haskell-stack
+```
+
 ## How to Build
 
 ```bash

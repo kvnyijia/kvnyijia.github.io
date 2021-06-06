@@ -18,16 +18,22 @@ body {
 }
 
 header {
-  background-color: #e7e8ea;
-  /* The code below will make the header sticky */
-  position: sticky;
-  top: 0;
-  z-index: 1;          /* To aviod conflict with MathJax */
+ 
 }
 
 nav {
+  justify-content: space-between;
   /* padding-right: 5%; */
   padding-left: 5%;
+  height: 3.7rem;
+  width: 100%;
+  background-color: #e7e8ea;
+  transition: 0.3s;
+  /* The code below will make the header sticky */
+  position: fixed;
+  top: 0;
+  /* To aviod conflict with MathJax */
+  z-index: 1;
 }
 
 nav a {
@@ -35,8 +41,8 @@ nav a {
   font-size: 1.5rem;
   font-weight: bold;
   color: #292929;
-  text-decoration: none;
-  display: inline-block;
+  display: block;
+  /* transition-delay: 3s; */
 }
 
 nav a:not(:first-child) {
@@ -46,6 +52,9 @@ nav a:not(:first-child) {
 nav a.icon {
   padding-right: 5%;
   padding-left: 5%;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .article-heading {
@@ -92,6 +101,10 @@ h2 {
 
 hr {
   margin-top: 0.5rem;
+}
+
+p {
+  line-height: 2.8rem;
 }
 
 a {
@@ -222,6 +235,9 @@ footer {
   footer {
     text-align: left;
   }
+  /* nav a { */
+    /* font-size: 1.8rem; */ /* a little bigger */
+  /* } */
   nav a:not(:first-child) {
     display: none;
   }
@@ -230,13 +246,15 @@ footer {
     display: block;
   }
   nav.responsive {
-    position: relative;
+    /* height: 12.6rem; */ /* a little bigger */
+    height: 11.1rem;
+    /* position: relative; */
   }
-  nav.responsive a.icon {
+  /* nav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
-  }
+  } */
   nav.responsive a {
     float: none;
     display: block;
@@ -268,13 +286,14 @@ footer {
     display: block;
   }
   nav.responsive {
-    position: relative;
+    height: 11.1rem;
+    /* position: relative; */
   }
-  nav.responsive a.icon {
+  /* nav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
-  }
+  } */
   nav.responsive a {
     float: none;
     display: block;
@@ -299,8 +318,11 @@ footer {
   }
   nav {
     margin: auto;
-    padding: 0;                  /* No need to have padding 5% on desktops */
-    width: var(--main-width);
+    padding: 0 15rem;
+    /* width: var(--main-width); */
+  }
+  nav a {
+    display: inline-block;
   }
   nav a:not(:first-child) {
     padding-left: 1.5rem;
