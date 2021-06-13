@@ -1,9 +1,9 @@
 <article>
     <section class="header">
-    $if(author)$
-        By $author$ ·
-    $endif$
         $date$
+    $if(author)$
+        By $if(author-link)$<a href=$author-link$>$endif$ $author$ $if(author-link)$</a>$endif$
+    $endif$
     </section>
     
     <section>

@@ -1,6 +1,7 @@
 ---
 title: Sample Post
 author: Kevin
+author-link: /about.html
 tags: testing,markdown,pandoc,hakyll,haskell,blog
 ---
 First line
@@ -13,8 +14,10 @@ wekjdw qwk de dlq edqwdkm.
 
 >> Second quote.
 
-## Apple
+
 ***
+
+## Apple
 oifmwoemf
 
 ### JJ
@@ -36,7 +39,6 @@ Table:  Demonstration of simple table syntax.
 [:second]: Christmas
 
 ## Banana
-***
 
 * qwd qwd vwfmk wfqowkemfw!!!!!
     * a
@@ -63,7 +65,6 @@ int sum(int n, int A[n])
 }
 ```
 ## Cat Theorem
-***
 Given $a=b+c$, then $a$ blablabla $b \iff c$ wmfwoe:
 
 $x = gg + \dfrac{x}{y}$
@@ -91,7 +92,6 @@ $$\delta(R) = \begin{cases}
 \end{cases}$$
 
 ## Paragraph
-***
 > On ne voit bien qu'avec le coeur. L'essentiel est invisible pour les yeux. --- Antoine de Saint Exupéry «Le Petit Prince »
 
 Fusce ~~tortor~~ quam, egestas in posuere quis, porttitor vel `turpis`. Donec vulputate porttitor augue at rhoncus. Proin iaculis consectetur sagittis. Curabitur venenatis turpis sit amet purus tristique nec posuere risus laoreet. Nullam nisi sem, dapibus id semper id, egestas vel arcu. Morbi porttitor ipsum placerat erat consequat sed consequat purus feugiat. Donec auctor elit ut risus mattis facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -109,6 +109,5 @@ Proin varius tempus fermentum. Cum sociis natoque penatibus et magnis dis partur
 Vestibulum eu nisi arcu. Curabitur nisi risus, fermentum ut lacinia ut, interdum nec magna. Nunc aliquet gravida massa, eu aliquam lorem faucibus at. Sed sollicitudin volutpat velit id tempor. In nibh justo, pharetra et pretium dignissim, tempus in turpis. Phasellus eget lobortis nisl. Phasellus sed fermentum diam. Nam tempus pharetra odio, quis congue eros imperdiet eu. Aliquam dui eros, hendrerit et vulputate vel, porta eu eros. **Nullam** nisi dui, commodo eget pharetra ut, ornare sit amet nunc. Fusce vel neque urna. Maecenas nulla ante, egestas at consequat quis, fermentum a enim. Aliquam id tristique urna. Integer augue justo, scelerisque et consectetur id, rhoncus eget enim.
 
 ## Image
-***
 
 ![](https://images.unsplash.com/photo-1434394354979-a235cd36269d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2833&q=80)

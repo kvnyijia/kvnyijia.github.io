@@ -59,10 +59,9 @@ nav a.icon {
 
 .article-heading {
   height: 600px;
+  width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 3rem;
-  color: #ffffff;
   text-align: center;
   background-color: #47616e;
 }
@@ -71,6 +70,8 @@ h1.article-heading {
   padding-top: 300px;
   padding-right: 2.5%;
   padding-left: 2.5%;
+  font-size: 3rem;
+  color: #ffffff;
 }
 
 /* Post info */
@@ -80,6 +81,7 @@ article .header {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   color: #aeaeae;
+  text-transform: uppercase;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -94,13 +96,18 @@ h1 {
 
 h2 {
   margin-top: 3rem;
-  margin-bottom: 0;
-  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.3rem solid #c2d994;
+  width: 40px;
+  font-size: 2.5rem;
   font-style: normal;
+  /* Get text in one line rather than two */
+  white-space: nowrap;
 }
 
 hr {
-  margin-top: 0.5rem;
+  margin: 3rem 0;
+  border: 1px solid #555;
 }
 
 p {
@@ -120,7 +127,7 @@ li {
 blockquote {
   margin: 0 1rem 0 0;
   padding: 0.0625rem 2rem;
-  border-left: 0.3rem solid #c2d994;
+  border-left: 0.3rem solid #a9c5e0;
   color: #a1a1a1;
 }
 
