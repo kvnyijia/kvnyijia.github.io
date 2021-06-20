@@ -1,5 +1,6 @@
 :root {
   --main-width: 90rem;
+  --header-heigh: 3.7rem;
 }
 
 * {
@@ -25,7 +26,7 @@ nav {
   justify-content: space-between;
   /* padding-right: 5%; */
   padding-left: 5%;
-  height: 3.7rem;
+  height: var(--header-heigh);
   width: 100%;
   background-color: #e7e8ea;
   transition: 0.3s;
@@ -33,7 +34,7 @@ nav {
   position: fixed;
   top: 0;
   /* To aviod conflict with MathJax */
-  z-index: 1;
+  z-index: 2;
 }
 
 nav a {
@@ -58,25 +59,43 @@ nav a.icon {
 }
 
 .article-heading {
-  height: 600px;
+  height: 200rem;
   width: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #47616e;
+  position: fixed;
+  top: var(--header-heigh);
+  z-index: 0;
 }
 
-h1.article-heading {
-  padding-top: 300px;
+main {
+  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+  top: var(--header-heigh);
+  z-index: 1;
+}
+
+h1.ah {
+  padding-top: 40rem;
+  padding-bottom: 40rem;
   padding-right: 2.5%;
   padding-left: 2.5%;
+  text-align: center;
   font-size: 3rem;
   color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+article {
+  padding: 1rem 0;
 }
 
 /* Post info */
 article .header {
-  margin: 3rem 0;
+  padding-top: 3rem;
   font-size: 1.4rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
@@ -178,6 +197,7 @@ caption {
   color: #555;
 }
 
+/* Tags section */
 article .tags-sec {
   margin-top: 5rem;
 }
@@ -197,6 +217,9 @@ footer {
   color: white;
   background: #506268;
   text-align: left;
+  top: var(--header-heigh);
+  position: relative;
+  z-index: 1;
 }
 
 .footer {
@@ -321,6 +344,10 @@ footer {
   main {
     margin: auto;
     padding: 0;                  /* Default padding is 5% */
+    /* width: var(--main-width); */
+  }
+  article {
+    margin: auto;
     width: var(--main-width);
   }
   nav {

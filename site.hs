@@ -5,7 +5,7 @@ import           Hakyll
 import           Text.Pandoc.Options        -- For customized Pandoc options
 
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
     match "assets/*" $ do
         route   $ idRoute
         compile $ copyFileCompiler
@@ -33,6 +33,7 @@ main = hakyll $ do
         route   $ gsubRoute "menu/" (const "") `composeRoutes` setExtension "html"
         compile $ do 
             pandocCompiler
+                >>= loadAndApplyTemplate "templates/non-post.html" defaultContext
                 >>= loadAndApplyTemplate "templates/default.html" defaultContext
                 >>= relativizeUrls
     
@@ -44,6 +45,7 @@ main = hakyll $ do
                     listField "posts" postCtx (return posts) `mappend`
                     defaultContext
             pandocCompiler
+                >>= loadAndApplyTemplate "templates/non-post.html" archiveCtx
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
@@ -51,8 +53,14 @@ main = hakyll $ do
         route   $ constRoute "index.html"
         compile $ do
             pandocCompiler
+                >>= loadAndApplyTemplate "templates/non-post.html" defaultContext
                 >>= loadAndApplyTemplate "templates/default.html" defaultContext
                 >>= relativizeUrls
+
+-- Customized config
+config :: Configuration
+config = defaultConfiguration
+    { previewHost          = "0.0.0.0" }
 
 -- Create a context containing $date$ field for posts
 postCtx :: Context String

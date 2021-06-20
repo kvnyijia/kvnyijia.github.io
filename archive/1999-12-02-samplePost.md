@@ -3,6 +3,7 @@ title: Sample Post
 author: Kevin
 author-link: /about.html
 tags: testing,markdown,pandoc,hakyll,haskell,blog
+heading-img: https://images.unsplash.com/photo-1476357471311-43c0db9fb2b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80
 ---
 First line
 
@@ -100,11 +101,15 @@ Proin vulputate sapien facilisis leo *ornare* pulvinar. **Fusce tempus** massa a
 
 ![](https://i.imgur.com/Le8HJBV.png =300x150)
 
+> **Note**: When in doubt, leave a folder in **Restricted Mode**. You can always **enable trust** later.
+
 Aenean tincidunt sollicitudin sapien ut porttitor. Curabitur molestie adipiscing lorem vel scelerisque. Donec vitae interdum est. Proin rutrum vulputate faucibus. Suspendisse sit amet `felis` odio, non `volutpat ante`. Sed eu lectus quam. Curabitur **tristique rhoncus** est, vel commodo tortor suscipit semper. Maecenas feugiat vestibulum nisi id facilisis. Nulla non tincidunt libero. Praesent ultrices interdum commodo. Sed euismod nisl auctor leo ultrices rutrum. Aliquam nibh felis, congue molestie blandit at, bibendum at eros. Aenean tincidunt, tortor iaculis placerat **sollicitudin**, lorem justo tempor diam, et posuere sapien leo et magna. Quisque vel aliquam mauris.
 
 > Skmeq, woe eo ceoff ascetkv.
 
 Proin varius tempus fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tincidunt nunc id magna adipiscing non sollicitudin turpis tempor. Etiam vel elit ipsum, quis euismod velit. Quisque elementum magna vitae quam venenatis lacinia. Sed at arcu ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ut lorem ac sapien cursus lacinia sit amet mollis dolor. Vivamus *tempus* odio nec magna faucibus sed hendrerit lorem tempor.
+
+> **Note**: If you want to disable the Workspace Trust feature, you can set `security.workspace.trust.enabled` to false. Only disable Workspace Trust if you are confident that you know the source and integrity of the files you are working with.
 
 Vestibulum eu nisi arcu. Curabitur nisi risus, fermentum ut lacinia ut, interdum nec magna. Nunc aliquet gravida massa, eu aliquam lorem faucibus at. Sed sollicitudin volutpat velit id tempor. In nibh justo, pharetra et pretium dignissim, tempus in turpis. Phasellus eget lobortis nisl. Phasellus sed fermentum diam. Nam tempus pharetra odio, quis congue eros imperdiet eu. Aliquam dui eros, hendrerit et vulputate vel, porta eu eros. **Nullam** nisi dui, commodo eget pharetra ut, ornare sit amet nunc. Fusce vel neque urna. Maecenas nulla ante, egestas at consequat quis, fermentum a enim. Aliquam id tristique urna. Integer augue justo, scelerisque et consectetur id, rhoncus eget enim.
 
