@@ -1,5 +1,5 @@
 :root {
-  --main-width: 90rem;
+  --article-width: 90rem;
   --header-heigh: 3.7rem;
 }
 
@@ -24,7 +24,6 @@ header {
 
 nav {
   justify-content: space-between;
-  /* padding-right: 5%; */
   padding-left: 5%;
   height: var(--header-heigh);
   width: 100%;
@@ -43,7 +42,6 @@ nav a {
   font-weight: bold;
   color: #292929;
   display: block;
-  /* transition-delay: 3s; */
 }
 
 nav a:not(:first-child) {
@@ -58,7 +56,7 @@ nav a.icon {
   top: 0;
 }
 
-.article-heading {
+.heading-img {
   height: 200rem;
   width: 100%;
   margin: 0;
@@ -77,7 +75,7 @@ main {
   z-index: 1;
 }
 
-h1.ah {
+h1.article-heading {
   padding-top: 40rem;
   padding-bottom: 40rem;
   padding-right: 2.5%;
@@ -265,9 +263,6 @@ footer {
   footer {
     text-align: left;
   }
-  /* nav a { */
-    /* font-size: 1.8rem; */ /* a little bigger */
-  /* } */
   nav a:not(:first-child) {
     display: none;
   }
@@ -276,15 +271,8 @@ footer {
     display: block;
   }
   nav.responsive {
-    /* height: 12.6rem; */ /* a little bigger */
     height: 11.1rem;
-    /* position: relative; */
   }
-  /* nav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  } */
   nav.responsive a {
     float: none;
     display: block;
@@ -317,13 +305,7 @@ footer {
   }
   nav.responsive {
     height: 11.1rem;
-    /* position: relative; */
   }
-  /* nav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  } */
   nav.responsive a {
     float: none;
     display: block;
@@ -344,16 +326,14 @@ footer {
   main {
     margin: auto;
     padding: 0;                  /* Default padding is 5% */
-    /* width: var(--main-width); */
   }
   article {
     margin: auto;
-    width: var(--main-width);
+    width: var(--article-width);
   }
   nav {
     margin: auto;
     padding: 0 15rem;
-    /* width: var(--main-width); */
   }
   nav a {
     display: inline-block;
@@ -371,6 +351,6 @@ footer {
   .footer {
     padding-right: 0;
     padding-left: 0;
-    width: var(--main-width);    /* To match main's width */
+    width: var(--article-width);    /* To match article's width */
   }
 }

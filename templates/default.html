@@ -37,13 +37,13 @@
         </header>
 
     $if(heading-img)$
-        <div class="article-heading" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url($heading-img$);">
+        <div class="heading-img" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url($heading-img$);">
     $else$
-        <div class="article-heading" style="background-color: #47616e">
+        <div class="heading-img" style="background-color: #47616e">
     $endif$
         </div>
 
-        <h1 class="ah">$title$</h1>
+        <h1 class="article-heading">$title$</h1>
 
         <main role="main">
             $body$
