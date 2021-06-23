@@ -1,11 +1,22 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.String (fromString)
 import           Data.Monoid (mappend)
+import           Control.Monad (liftM)
+import           Control.Applicative ((<$>))
 import           Hakyll
 import           Text.Pandoc.Options        -- For customized Pandoc options
 
+postsPageId :: PageNumber -> Identifier
+postsPageId n = fromFilePath $ if (n == 1) then "index.html" else show n ++ "/index.html"
+
+postsGrouper :: (MonadFail m, MonadMetadata m) => [Identifier] -> m [[Identifier]]
+postsGrouper = liftM (paginateEvery 10) . sortRecentFirst
+
 main :: IO ()
 main = hakyllWith config $ do
+
+    paginate <- buildPaginateWith postsGrouper "archive/*" postsPageId
+
     match "assets/*" $ do
         route   $ idRoute
         compile $ copyFileCompiler
@@ -27,6 +38,22 @@ main = hakyllWith config $ do
             pandocCompilerWith customReaderOptions customWriterOptions
                 >>= loadAndApplyTemplate "templates/post.html"    postCtx
                 >>= loadAndApplyTemplate "templates/default.html" postCtx
+                >>= relativizeUrls
+    
+    paginateRules paginate $ \page pattern -> do
+        route idRoute
+        compile $ do
+            posts <- recentFirst =<< loadAll "archive/*"
+            let indexCtx =
+                    constField "title" (if page == 1 then "Latest blog posts"
+                                                     else "Blog posts, page " ++ show page) `mappend`
+                    listField "posts" postCtx (return posts)                                `mappend`
+                    paginateContext paginate page                                           `mappend`
+                    defaultContext
+
+            makeItem ""
+                >>= applyAsTemplate indexCtx
+                >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
 
     match "menu/about.md" $ do
