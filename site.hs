@@ -7,10 +7,10 @@ import           Hakyll
 import           Text.Pandoc.Options        -- For customized Pandoc options
 
 postsPageId :: PageNumber -> Identifier
-postsPageId n = fromFilePath $ if (n == 1) then "index.html" else show n ++ "/index.html"
+postsPageId n = fromFilePath $ "archive/" ++ (show n) ++ "/index.html"
 
 postsGrouper :: (MonadFail m, MonadMetadata m) => [Identifier] -> m [[Identifier]]
-postsGrouper = liftM (paginateEvery 10) . sortRecentFirst
+postsGrouper = liftM (paginateEvery 1) . sortRecentFirst
 
 main :: IO ()
 main = hakyllWith config $ do
@@ -35,9 +35,10 @@ main = hakyllWith config $ do
     match "archive/*" $ do
         route   $ setExtension "html"
         compile $ do
+            let indexCtx = paginateContext paginate 4 `mappend` postCtx
             pandocCompilerWith customReaderOptions customWriterOptions
-                >>= loadAndApplyTemplate "templates/post.html"    postCtx
-                >>= loadAndApplyTemplate "templates/default.html" postCtx
+                >>= loadAndApplyTemplate "templates/post.html"    indexCtx
+                >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
     
     paginateRules paginate $ \page pattern -> do
@@ -47,12 +48,15 @@ main = hakyllWith config $ do
             let indexCtx =
                     constField "title" (if page == 1 then "Latest blog posts"
                                                      else "Blog posts, page " ++ show page) `mappend`
+                    -- constField "body" "fuck" `mappend`
                     listField "posts" postCtx (return posts)                                `mappend`
+                    -- dateField "date" "2010-09-06 00:01:00+0000" `mappend`
                     paginateContext paginate page                                           `mappend`
                     defaultContext
 
             makeItem ""
                 >>= applyAsTemplate indexCtx
+                -- >>= loadAndApplyTemplate "templates/post.html"    indexCtx
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
 
