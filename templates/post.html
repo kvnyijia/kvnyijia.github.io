@@ -19,8 +19,12 @@
     </section>
 
     <section class="page-nav">
+    $if(previousPageUrl)$
         <a href=$previousPageUrl$>Previous</a>
+    $endif$
+    $if(nextPageUrl)$
         <a href=$nextPageUrl$>Next</a>
+    $endif$
     </section>
 
 </article>
