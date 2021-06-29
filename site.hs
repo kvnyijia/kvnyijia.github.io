@@ -1,21 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.String (fromString)
 import           Data.Monoid (mappend)
-import           Data.Maybe  (fromMaybe)
-import           Control.Monad (liftM)
-import           Control.Applicative ((<$>))
 import           Hakyll
 import           Text.Pandoc.Options        -- For customized Pandoc options
-
-postsPageId :: PageNumber -> Identifier
-postsPageId n = fromFilePath $ case n of 1 -> "archive/1999-12-02-samplePost.md"
-                                         2 -> "archive/2015-08-12-spqr.markdown"
-                                         3 -> "archive/2015-10-07-rosa-rosa-rosam.markdown"
-                                         4 -> "archive/2015-11-28-carpe-diem.markdown"
-                                         5 -> "archive/2015-12-07-tu-quoque.markdown"
-
-postsGrouper :: (MonadFail m, MonadMetadata m) => [Identifier] -> m [[Identifier]]
-postsGrouper = liftM (paginateEvery 1) . sortRecentFirst
 
 main :: IO ()
 main = hakyllWith config $ do
@@ -33,29 +20,21 @@ main = hakyllWith config $ do
     
     match "templates/*" $ do 
         compile $ templateBodyCompiler
-    
-    match "archive/*" $ version "firstVer" $ do
-        compile $ 
-            pandocCompilerWith customReaderOptions customWriterOptions
 
-    paginate <- buildPaginateWith postsGrouper "archive/*" postsPageId
+    postIds <- getMatches $ fromGlob "archive/*"
 
-    paginateRules paginate $ \page pattern -> do
+    postPages <- buildPaginateWith 
+                    (\ids -> sortRecentFirst ids >>= return . paginateEvery 1)
+                    "archive/*" 
+                    (\pageNum -> getId postIds pageNum)
+
+    paginateRules postPages $ \pageNum pattern -> do
         route   $ setExtension "html"
         compile $ do
-            iden <- getUnderlying
-            let id = setVersion (Just "firstVer") iden
-            item <- load id :: Compiler (Item String)
-            meta <- getMetadata id
-            let indexCtx =
-                    paginateContext paginate page                                           `mappend`
-                    postCtx                                                               `mappend`
-                    constField "title" (fromMaybe "No title" $ lookupString "title" meta) `mappend`
-                    constField "body" (itemBody item)
-            
+            let ctx = paginateContext postPages pageNum `mappend` postCtx
             pandocCompilerWith customReaderOptions customWriterOptions
-                >>= loadAndApplyTemplate "templates/post.html"    indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= loadAndApplyTemplate "templates/post.html"    ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
     match "menu/about.md" $ do
@@ -90,6 +69,11 @@ main = hakyllWith config $ do
 config :: Configuration
 config = defaultConfiguration
     { previewHost          = "0.0.0.0" }
+
+-- Return an ID based on pageNum (min. = 1)
+getId :: [Identifier] -> Int -> Identifier
+getId (id:ids) 1 = id
+getId (id:ids) n = getId ids (n-1)
 
 -- Create a context containing $date$ field for posts
 postCtx :: Context String
