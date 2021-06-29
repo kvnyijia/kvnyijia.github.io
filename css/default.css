@@ -136,6 +136,10 @@ a {
   text-decoration: none;
 }
 
+a.inactive {
+  color: #555555;
+}
+
 li {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -209,6 +213,15 @@ li.tags {
   padding-right: 0.1rem;
   padding-bottom: 0.1rem;
   display: inline-block;
+}
+
+section.page-nav {
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span.page-nav-next {
+  float: right;
 }
 
 footer {

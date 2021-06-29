@@ -19,12 +19,33 @@
     </section>
 
     <section class="page-nav">
-    $if(previousPageUrl)$
-        <a href=$previousPageUrl$>Previous</a>
-    $endif$
-    $if(nextPageUrl)$
-        <a href=$nextPageUrl$>Next</a>
-    $endif$
+        <span class="page-nav-prev">
+        $if(previousPageUrl)$
+            <a href=$previousPageUrl$>
+                <i class="fas fa-chevron-left"></i>
+                Older
+            </a>
+        $else$
+            <a class="inactive">
+                <i class="fas fa-chevron-left"></i>
+                Older
+            </a>
+        $endif$
+        </span>
+
+        <span class="page-nav-next">
+        $if(nextPageUrl)$
+            <a href=$nextPageUrl$>
+                Newer
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        $else$
+            <a class="inactive">
+                Newer
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        $endif$
+        </span>
     </section>
 
 </article>
