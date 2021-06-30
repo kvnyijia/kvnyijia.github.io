@@ -124,7 +124,7 @@ h2 {
 
 hr {
   margin: 3rem 0;
-  border: 1px solid #555;
+  border: 1px solid #E7E9EE;
 }
 
 p {
@@ -216,6 +216,7 @@ li.tags {
 }
 
 section.page-nav {
+  padding: 0 0 20rem 0;
   font-size: 1.5rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
