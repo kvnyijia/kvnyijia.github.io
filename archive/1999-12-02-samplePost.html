@@ -5,7 +5,14 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Sample Post | kevin110604 </title>
+        <!-- Open graph -->
+        <meta property="og:title" content="Sample" Post />
+    
+        <meta property="og:image" content="https://images.unsplash.com/photo-1476357471311-43c0db9fb2b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80/">
+        <meta property="”og:url”" content="https://kvnyijia.github.io/" />
+        <meta property="”og:site_name”" content="kvnyijia's Notes" />
+    
+        <title> Sample Post | kvnyijia's Notes </title>
         <link rel="stylesheet" href="../css/default.css" />
         <!-- For icons -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
@@ -27,7 +34,7 @@
 
         <header>
             <nav id="myTopnav">
-                <a href="../">kevin110604’s blog</a>
+                <a href="../">kvnyijia’s Notes</a>
                 <a href="../about.html">About</a>
                 <a href="../archive/">Archive</a>
                 <a href="javascript:void(0);" class="icon" onclick="toggleFunction()">
@@ -45,7 +52,7 @@
 
         <main role="main">
             <article>
-    <section class="header">
+    <section class="post-info">
         Dec  2, 1999
     
         By <a href="../about.html"> Kevin </a>
@@ -337,17 +344,30 @@
         </main>
 
         <footer>
-            <div class="footer">
-                <h4>kevin110604’s blog</h4>
-                <ul>
-                <li><a href="../">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../archive/">Archive</a></li>
-                </ul>
-                <p>
-                Powered by
-                <a href="http://jaspervdj.be/hakyll">Hakyll</a>.
-                </p>
+            <div class="flex-container">
+                <div class="footer" id="div-links">
+                    <h4>kvnyijia’s Notes</h4>
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../archive/">Archive</a></li>
+                    </ul>
+                    <p>
+                        Powered by
+                        <a href="http://jaspervdj.be/hakyll">Hakyll</a>.
+                    </p>
+                </div>
+                <div class="footer" id="div-follow">
+                    <h4>Follow Me</h4>
+                    <p>
+                        <a class="follow-icon" href="https://github.com/kvnyijia"><i class="fab fa-github-square"></i></a> 
+                        <a class="follow-icon" href="https://www.linkedin.com/in/kvnyijia/"><i class="fab fa-linkedin"></i></a> 
+                        <a class="follow-icon" href="https://twitter.com/kvnyijia"><i class="fab fa-twitter-square"></i></a> 
+                    </p>
+                </div>
+                <div class="footer">
+                    <!-- Empty div -->
+                </div>
             </div>
         </footer>
     </body>
