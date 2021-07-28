@@ -60,9 +60,14 @@ main = hakyllWith config $ do
     match "menu/home.md" $ do 
         route   $ constRoute "index.html"
         compile $ do
+            tmp <- recentFirst =<< loadAll "archive/*"
+            let posts = take 3 tmp
+            let homeCtx =
+                    listField "posts" postCtx (return posts) `mappend`
+                    defaultContext
             pandocCompiler
-                >>= loadAndApplyTemplate "templates/non-post.html" defaultContext
-                >>= loadAndApplyTemplate "templates/default.html" defaultContext
+                >>= loadAndApplyTemplate "templates/home-template.html" homeCtx
+                >>= loadAndApplyTemplate "templates/default.html"       homeCtx
                 >>= relativizeUrls
 
 -- Customized config

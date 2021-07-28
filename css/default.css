@@ -19,13 +19,6 @@ body {
 }
 
 header {
- 
-}
-
-nav {
-  justify-content: space-between;
-  padding-left: 5%;
-  height: var(--header-heigh);
   width: 100%;
   background-color: #e7e8ea;
   transition: 0.3s;
@@ -34,6 +27,11 @@ nav {
   top: 0;
   /* To aviod conflict with MathJax */
   z-index: 2;
+}
+
+nav {
+  height: var(--header-heigh);
+  justify-content: space-between;
 }
 
 nav a {
@@ -57,13 +55,13 @@ nav a.icon {
 }
 
 .heading-img {
-  height: 200rem;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
   position: fixed;
-  top: var(--header-heigh);
+  /* top: var(--header-heigh); */
   z-index: 0;
 }
 
@@ -81,7 +79,7 @@ h1.article-heading {
   padding-right: 2.5%;
   padding-left: 2.5%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #ffffff;
   position: relative;
   z-index: 1;
@@ -92,7 +90,7 @@ article {
 }
 
 /* Post info */
-article .header {
+.post-info {
   padding-top: 3rem;
   font-size: 1.4rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -140,6 +138,11 @@ a.inactive {
   color: #555555;
 }
 
+a.follow-icon {
+  font-size: 2.5rem;
+  color: white;
+}
+
 li {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -148,7 +151,7 @@ li {
 blockquote {
   margin: 0 1rem 0 0;
   padding: 0.0625rem 2rem;
-  border-left: 0.3rem solid #a9c5e0;
+  border-left: 0.3rem solid #59ab8b;
   color: #a1a1a1;
 }
 
@@ -228,16 +231,19 @@ span.page-nav-next {
 footer {
   color: white;
   background: #506268;
-  text-align: left;
   top: var(--header-heigh);
   position: relative;
   z-index: 1;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer {
   padding-top: 3rem;
   padding-bottom: 1rem;
-  margin: auto;
   font-size: 1.4rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -255,7 +261,8 @@ footer {
 }
 
 .footer li {
-  padding: 0;
+  padding: 0 6px 0 0;
+  display: inline-block;
 }
 
 .footer p {
@@ -276,6 +283,9 @@ footer {
   }
   footer {
     text-align: left;
+  }
+  nav {
+    padding-left: 5%;
   }
   nav a:not(:first-child) {
     display: none;
@@ -309,6 +319,9 @@ footer {
   }
   footer {
     text-align: left;
+  }
+  nav {
+    padding-left: 5%;
   }
   nav a:not(:first-child) {
     display: none;
@@ -346,8 +359,9 @@ footer {
     width: var(--article-width);
   }
   nav {
+    padding-left: 0;             /* Dont know why have to add this */
     margin: auto;
-    padding: 0 15rem;
+    width: var(--article-width);
   }
   nav a {
     display: inline-block;
@@ -359,12 +373,12 @@ footer {
   nav a.icon {
     display: none;
   }
-  footer {
-    text-align: left;
+  .flex-container {
+    margin: 0 auto;
+    width: var(--article-width);    /* To match article's width */
   }
   .footer {
     padding-right: 0;
     padding-left: 0;
-    width: var(--article-width);    /* To match article's width */
   }
 }

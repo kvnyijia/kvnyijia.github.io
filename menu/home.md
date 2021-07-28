@@ -1,6 +1,6 @@
 ---
-title: kevin110604’s blog
+title: kvnyijia’s Notes
 home: y
 ---
 
-:)
+## Recent Posts
