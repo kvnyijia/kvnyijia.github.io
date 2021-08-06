@@ -1,12 +1,26 @@
 <article>
     $body$
 $for(posts)$
-    <div class="post-info">
-        <time>$date$</time>
+    <div class="preview-flex-container">
+        <div class="post-flex-item">
+        $if(heading-img)$
+            <img src="$heading-img$" alt="Heading image" class="preview-heading">
+        $else$
+            <div class="preview-heading" style="background-color: #eceef1"></div>
+        $endif$
+        </div>
+        <div class="post-flex-item">
+            <a href="$url$"><h3>$title$</h3></a>
+            <div class="preview-post-info">
+            $if(author)$
+                By $author$
+            $endif$
+                <time>$date$</time>
+            </div>
+        </div>
     </div>
-    <h3>$title$</h3>
-     ...
-    <a href="$url$">READ MORE</a><br><br>
-    <hr>
+    
+    $sep$<hr>
 $endfor$
+    </br>
 </article>

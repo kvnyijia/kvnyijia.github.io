@@ -61,7 +61,7 @@ main = hakyllWith config $ do
         route   $ constRoute "index.html"
         compile $ do
             tmp <- recentFirst =<< loadAll "archive/*"
-            let posts = take 3 tmp
+            let posts = take 5 tmp
             let homeCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     defaultContext

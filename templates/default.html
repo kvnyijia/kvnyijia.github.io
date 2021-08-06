@@ -9,10 +9,10 @@
         <meta property="og:title" content=$title$/>
     $if(heading-img)$
         <meta property="og:image" content=$heading-img$/>
+    $endif$
         <meta property=”og:url” content="https://kvnyijia.github.io/"/>
         <meta property=”og:site_name” content="kvnyijia's Notes"/>
-    $endif$
-        <title>$if(home)$ kvnyijia’s Notes $else$ $title$ | kvnyijia's Notes $endif$</title>
+        <title>$if(home)$ kvnyijia's Notes $else$ $title$ | kvnyijia's Notes $endif$</title>
         <link rel="stylesheet" href="/css/default.css" />
         <!-- For icons -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
@@ -46,7 +46,7 @@
     $if(heading-img)$
         <div class="heading-img" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url($heading-img$);">
     $else$
-        <div class="heading-img" style="background-color: #47616e">
+        <div class="heading-img" style="background-color: #A8BAA1">
     $endif$
         </div>
 
@@ -59,7 +59,7 @@
         <footer>
             <div class="flex-container">
                 <div class="footer" id="div-links">
-                    <h4>kvnyijia’s Notes</h4>
+                    <h4>Quick Links</h4>
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/about.html">About</a></li>

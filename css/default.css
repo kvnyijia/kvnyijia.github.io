@@ -130,7 +130,7 @@ p {
 }
 
 a {
-  color: mediumseagreen;
+  color: #59ab8b;
   text-decoration: none;
 }
 
@@ -251,6 +251,8 @@ footer {
 .footer h4 {
   margin-bottom: 1rem;
   font-size: 1.7rem;
+  font-weight: normal;
+  text-transform: uppercase;
   color: white;
 }
 
@@ -267,6 +269,37 @@ footer {
 
 .footer p {
   color: #dddddd;
+}
+
+/* Home page */
+.preview-heading {
+  width: 20rem;
+  height: 20rem;
+  margin-right: 2rem;
+  object-fit: cover;
+}
+
+.preview-post-info {
+  font-size: 1.3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* color: #aeaeae; */
+  text-transform: uppercase;
+}
+
+.preview-flex-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.post-flex-item {
+  max-width: 65rem;
+}
+
+/* Archive page */
+.archive-list-post-date {
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
 }
 
 @media (max-width: 319px) {
@@ -306,6 +339,13 @@ footer {
     padding-right: 5%;    /* 5% is used to match main's default padding */
     padding-left: 5%;
   }
+  .preview-heading {
+    width: 10rem;
+    height: 10rem;
+  }
+  .post-flex-item {
+    max-width: 15rem;
+  }
 }
 
 @media (min-width: 320px) {
@@ -341,6 +381,13 @@ footer {
   .footer {
     padding-right: 5%;           /* 5% is used to match main's default padding */
     padding-left: 5%;
+  }
+  .preview-heading {
+    width: 12rem;
+    height: 12rem;
+  }
+  .post-flex-item {
+    max-width: 15rem;
   }
 }
 
@@ -380,5 +427,12 @@ footer {
   .footer {
     padding-right: 0;
     padding-left: 0;
+  }
+  .post-flex-item {
+    max-width: 65rem;
+  }
+  .preview-heading {
+    width: 20rem;
+    height: 20rem;
   }
 }
