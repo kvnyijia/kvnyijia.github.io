@@ -56,7 +56,7 @@ Table:  Demonstration of simple table syntax.
     3. z
 * H~2~O
 
-```c=
+``` language-c
 int sum(int n, int A[n]) 
 {
     int sum = 0;
