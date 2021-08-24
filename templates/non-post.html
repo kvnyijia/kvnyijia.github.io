@@ -3,4 +3,9 @@
 $if(isArchive)$
     $partial("templates/post-list.html")$
 $endif$
+$if(isTags)$
+    <div class="tag-cloud">
+        $tagcloud$
+    </div>
+$endif$
 </article>

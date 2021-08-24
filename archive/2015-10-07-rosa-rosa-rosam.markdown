@@ -1,7 +1,7 @@
 ---
 title: Rosa Rosa Rosam
 author: Ovidius
-tags: testing
+tags: testing, good morning, apple, markdown, hakyll, air, clean, price, compliment, humiliating, france
 ---
 
 Suspendisse pharetra ullamcorper sem et auctor. Suspendisse vitae tellus eu

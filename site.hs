@@ -1,8 +1,12 @@
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.String (fromString)
-import           Data.Monoid (mappend)
+import           Data.String                     (fromString)
+import           Data.Monoid                     (mappend)
 import           Hakyll
-import           Text.Pandoc.Options        -- For customized Pandoc options
+import           Text.Pandoc.Options                                    -- For customized Pandoc options
+import qualified Text.Blaze.Html5                as H                   -- For customized tag's html render
+import qualified Text.Blaze.Html5.Attributes     as A
+import           Text.Blaze.Html                 (toHtml, toValue, (!))
+import           Data.List                       (intersperse)
 
 main :: IO ()
 main = hakyllWith config $ do
@@ -25,6 +29,9 @@ main = hakyllWith config $ do
     match "templates/*" $ do 
         compile $ templateBodyCompiler
 
+    -- Posts
+    tags <- buildTags "archive/*" (fromCapture "tags/*.html")
+
     postIds <- getMatches $ fromGlob "archive/*"
 
     postPages <- buildPaginateWith 
@@ -35,9 +42,36 @@ main = hakyllWith config $ do
     paginateRules postPages $ \pageNum pattern -> do
         route   $ setExtension "html"
         compile $ do
-            let ctx = paginateContext postPages pageNum `mappend` postCtx
+            let ctx = paginateContext postPages pageNum `mappend` 
+                    tagsFieldWith getTags tagsRenderLink mconcat "tags" tags `mappend`
+                    postCtx
             pandocCompilerWith customReaderOptions customWriterOptions
                 >>= loadAndApplyTemplate "templates/post.html"    ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
+    
+    tagsRules tags $ \tag pattern -> do
+        let title    = '#' : tag
+        let subtitle = "Posts tagged \"" ++ tag ++ "\""
+        route idRoute
+        compile $ do
+            posts <- recentFirst =<< loadAll pattern
+            let ctx = constField "title" title     `mappend`
+                    constField "subtitle" subtitle `mappend`
+                    listField "posts" (tagsField "tags" tags `mappend` postCtx) (return posts) `mappend` 
+                    defaultContext
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/tag-template.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
+
+    match "menu/tags.md" $ do
+        route   $ constRoute "tags/index.html"
+        compile $ do 
+            cloud <- renderTagCloud 20 100 tags  
+            let ctx = tagCloudField "tagcloud" 100 500 tags `mappend` defaultContext 
+            pandocCompiler
+                >>= loadAndApplyTemplate "templates/non-post.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
@@ -88,8 +122,14 @@ getId (id:ids) n = getId ids (n-1)
 postCtx :: Context String
 postCtx =
     dateField "date" "%b %e, %Y" `mappend`
-    tagsCtx                      `mappend`
     defaultContext
+
+tagsRenderLink :: String -> (Maybe FilePath) -> Maybe H.Html
+tagsRenderLink _   Nothing         = Nothing
+tagsRenderLink tag (Just filePath) = 
+    Just $ H.li ! A.class_ "tags" $ H.code $ H.a ! A.title (H.stringValue ("All pages tagged '"++tag++"'."))
+        ! A.href (toValue $ toUrl filePath)
+        $ toHtml ('#' : tag)
 
 -- Create a context containing $tags$ (which is a listField)
     -- listFieldWith :: String -> Context a -> (Item b -> Compiler [Item a]) -> Context b

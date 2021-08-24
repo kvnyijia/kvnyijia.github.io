@@ -63,6 +63,7 @@ nav a.icon {
   position: fixed;
   /* top: var(--header-heigh); */
   z-index: 0;
+  background-size: 100%;
 }
 
 main {
@@ -213,8 +214,8 @@ ul.tags  {
 }
 
 li.tags {
-  padding-right: 0.1rem;
-  padding-bottom: 0.1rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
   display: inline-block;
 }
 
@@ -234,6 +235,10 @@ footer {
   top: var(--header-heigh);
   position: relative;
   z-index: 1;
+}
+
+.tag-cloud a {
+  padding: 0 5px 0 0;
 }
 
 .flex-container {
@@ -328,7 +333,7 @@ footer {
     display: block;
   }
   nav.responsive {
-    height: 11.1rem;
+    height: 15rem;
   }
   nav.responsive a {
     float: none;
@@ -371,7 +376,7 @@ footer {
     display: block;
   }
   nav.responsive {
-    height: 11.1rem;
+    height: 15rem;
   }
   nav.responsive a {
     float: none;

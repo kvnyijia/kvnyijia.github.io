@@ -9,13 +9,13 @@
     <section>
         $body$
     </section>
-    
+
     <section class="tags-sec">
-        <ul class="tags">
-        $for(tags)$
-            <li class="tags"><code>$tagElement$</code></li>
-        $endfor$
+    $if(tags)$
+        <ul class="tags"> 
+            $tags$ 
         </ul>
+    $endif$
     </section>
 
     <hr>
