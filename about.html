@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="./css/prism.css">
+        <!-- jQuery Google CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -26,15 +28,28 @@
         <script>
             function toggleFunction() {
               var x = document.getElementById("myTopnav");
+              var x2 = document.getElementById("nav-bar");
               if (x.className === "") {
                 x.className += "responsive";
+                x2.className = "scrolled";
               } else {
                 x.className = "";
               }
             }
+
+            window.onscroll = function() { scrollingFunction() };
+
+            function scrollingFunction() {
+                var x2 = document.getElementById("nav-bar");
+                if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
+                    x2.className = "scrolled";
+                } else {
+                    x2.className = "";
+                }
+            }
         </script>
 
-        <header>
+        <header id="nav-bar">
             <nav id="myTopnav">
                 <a href="./">kvnyijia’s Notes</a>
                 <a href="./about.html">About</a>
