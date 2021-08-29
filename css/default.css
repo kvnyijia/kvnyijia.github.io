@@ -20,13 +20,22 @@ body {
 
 header {
   width: 100%;
-  background-color: #e7e8ea;
+  background-color: transparent;
   transition: 0.3s;
   /* The code below will make the header sticky */
   position: fixed;
   top: 0;
   /* To aviod conflict with MathJax */
   z-index: 2;
+}
+
+.scrolled {
+  background-color: #e7e8ea;
+  transition: 0.3s;
+}
+
+.scrolled a {
+  color: #292929;
 }
 
 nav {
@@ -38,7 +47,7 @@ nav a {
   padding: 1rem 0;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #292929;
+  color: #ffffff;
   display: block;
 }
 
