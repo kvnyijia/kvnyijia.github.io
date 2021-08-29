@@ -55,12 +55,12 @@ nav a.icon {
 }
 
 .heading-img {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
-  position: fixed;
+  position: absolute;
   /* top: var(--header-heigh); */
   z-index: 0;
   background-size: 100%;
@@ -75,8 +75,8 @@ main {
 }
 
 h1.article-heading {
-  padding-top: 40rem;
-  padding-bottom: 40rem;
+  padding-top: 50vh;
+  padding-bottom: 50vh;
   padding-right: 2.5%;
   padding-left: 2.5%;
   text-align: center;
@@ -396,7 +396,7 @@ footer {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   body {
     width: 100%;
     margin: 0 auto;
