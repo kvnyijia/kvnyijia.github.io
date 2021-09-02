@@ -1,6 +1,10 @@
 
 ## Prerequisite
 
+* The Haskell tool [Stack](https://docs.haskellstack.org/en/stable/README/)
+* ghc (Stack's dependency)
+
+for your quick reference
 ```bash
 $ brew install ghc
 $ brew install haskell-stack
