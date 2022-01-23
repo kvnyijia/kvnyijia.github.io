@@ -185,6 +185,13 @@ img {
   height: auto;
 }
 
+.avatar {
+  border-radius: 50%;
+  vertical-align: middle;
+  width: 10rem;
+  height: 10rem;
+}
+
 table {
   overflow-y: scroll;
   border-collapse: collapse;
@@ -342,7 +349,7 @@ footer {
     display: block;
   }
   nav.responsive {
-    height: 15rem;
+    height: 12rem;        /* height of mobile expanded nav-bar */
   }
   nav.responsive a {
     float: none;
@@ -385,7 +392,7 @@ footer {
     display: block;
   }
   nav.responsive {
-    height: 15rem;
+    height: 12rem;        /* height of mobile expanded nav-bar */
   }
   nav.responsive a {
     float: none;
