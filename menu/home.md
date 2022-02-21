@@ -1,6 +1,7 @@
 ---
 title: kvnyijia’s Notes
 home: y
+heading-img: images/mainHeader.jpg
 ---
 
 ## About Me
