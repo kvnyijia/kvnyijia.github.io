@@ -1,7 +1,7 @@
 ---
-title: kvnyijia’s Notes
+title: kvnyijia's Notes
 home: y
-heading-img: images/mainHeader.jpg
+heading-img: https://kvnyijia.github.io/images/mainHeader.jpg
 ---
 
 ## About Me
