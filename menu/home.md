@@ -11,6 +11,6 @@ Currently I’m a master’s student at Georgia Tech, studying Computer Science.
 
 Share my ideas & what I learn here.
 
-Click [here](/assets/yi-chia-chen-cv.pdf) to view my CV.
+Click [here](/assets/yi-chia-chen-cv-web.pdf) to view my CV.
 
 ## Recent Posts
