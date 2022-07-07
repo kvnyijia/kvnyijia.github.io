@@ -5,14 +5,18 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!-- Open graph -->
         <meta property="og:title" content=$title$/>
     $if(heading-img)$
         <meta property="og:image" content=$heading-img$/>
         <meta property="og:image:secure_url" content=$heading-img$/>
     $endif$
+        <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://kvnyijia.github.io/"/>
         <meta property="og:site_name" content="kvnyijia's Notes"/>
+        <meta property="og:description" content="A software developer's Notes"/>
+
         <title>$if(home)$ kvnyijia's Notes $else$ $title$ | kvnyijia's Notes $endif$</title>
         <link rel="stylesheet" href="/css/default.css">
         <!-- For icons -->
