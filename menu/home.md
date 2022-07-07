@@ -1,5 +1,5 @@
 ---
-title: kvnyijia Notes
+title: kvnyijia's Notes
 home: y
 heading-img: https://kvnyijia.github.io/images/mainHeader.jpg
 ---
