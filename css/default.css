@@ -161,7 +161,7 @@ li {
 blockquote {
   margin: 0 1rem 0 0;
   padding: 0.0625rem 2rem;
-  border-left: 0.3rem solid #59ab8b;
+  border-left: 0.3rem solid #a1a1a1; /* #59ab8b; */
   color: #a1a1a1;
 }
 
