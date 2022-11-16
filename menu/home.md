@@ -13,7 +13,7 @@ heading-img: images/mainHeader2.jpg
 
 Hi there! I'm Kevin. Currently a M.S. in Computer Science candidate at Georgia Tech. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. I’m proficient in C++, Python, Java, and JavaScript.
 
-Staring from 2022 Fall, I become a GRA at our school. Recently my work is using a C++ parallel programming model, called HClib, to implement message-passing programs. I try to establish formalism of message-passing program properties. Back to 2020, I was a research intern at the Academia Sinica, which is a National Academy at Taiwan. I was also a data analysis intern when I was a senior. 
+Staring from 2022 Fall, I become a GRA at our school. Recently my work is using a C++ parallel programming model, called HClib, to implement message-passing programs. I try to establish formalism of message-passing program properties. Back to 2020, I was a research intern at the Academia Sinica, which is a National Academy at Taiwan. When I was a senior, I was also a data analyst intern at PIXNET. 
 
 In my sparse time, I like to take pictures, hiking, and stargazing. You can also find me on [LinkedIn](https://www.linkedin.com/in/kvnyijia), [GitHub](https://github.com/kvnyijia), and [Twitter](https://twitter.com/kvnyijia).
 
