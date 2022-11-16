@@ -21,39 +21,38 @@ In my sparse time, I like to take pictures, hiking, and stargazing. You can also
 
 <img src="https://pbs.twimg.com/profile_images/1508986649803382786/PXo1P238_400x400.jpg" alt="drawing" width="100"/>
 
-Aug 2022 -- Present</br>
-▎**Georgia Institute of Technology**</br>
-*Graduate Research Assistant | School of Computer Science*</br>
-Atlanta, GA</br>
+*Aug 2022 -- Present*</br>
+▎**Georgia Institute of Technology** Atlanta, GA</br>
+▎Graduate Research Assistant @ School of Computer Science</br>
+<!-- </br> -->
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Georgia_Tech_seal.svg/1200px-Georgia_Tech_seal.svg.png" alt="drawing" width="100"/>
+<img src="https://www.wsav.com/wp-content/uploads/sites/75/2016/05/georgia-tech-logo_38830824_ver1.0.gif?w=1280" alt="drawing" width="100"/>
 
 
-Aug 2021 -- Expected May 2023</br>
-▎**Georgia Institute of Technology**</br>
-*M.S. | Computer Science*</br>
-Atlanta, GA
+*Aug 2021 -- Expected May 2023*</br>
+▎**Georgia Institute of Technology** Atlanta, GA</br>
+▎M.S. in Computer Science</br>
 
 <img src="https://iptt.sinica.edu.tw/assets/sinica_logo-c1a2490e2ea2a02ec5c1f5e8fe9a3bdca9b289f4ad34f3dda4aff201a176d12a.png" alt="drawing" width="100"/>
 
-July 2020 -- Dec 2020</br>
-▎**Academia Sinica**</br>
-*Research Intern | Institute of Information Science*</br>
-Taipei, Taiwan
+*July 2020 -- Dec 2020*</br>
+▎**Academia Sinica** Taipei, Taiwan</br>
+▎Research Intern @ Institute of Information Science</br>
+
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/PIXNET_Logo.png/1200px-PIXNET_Logo.png" alt="drawing" width="100"/>
 
-Aug 2019 -- Dec 2019</br>
-▎**PIXNET**</br>
-*Data Analyst Intern | Data Analysis Team*</br>
-Taipei, Taiwan
+*Aug 2019 -- Dec 2019*</br>
+▎**PIXNET** Taipei, Taiwan</br>
+▎Data Analyst Intern @ Data Analysis Team</br>
+
 
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/National_Cheng_Kung_University_logo.svg/1920px-National_Cheng_Kung_University_logo.svg.png" alt="drawing" width="100"/>
 
-Sep 2015 -- June 2020</br>
-▎**National Cheng Kung University**</br>
-*B.S. | Computer Science*</br>
-Tainan, Taiwan
+*Sep 2015 -- June 2020*</br>
+▎**National Cheng Kung University** Tainan, Taiwan</br>
+▎B.S. in Computer Science</br>
+
 
 <!-- ## Recent Posts -->
 
