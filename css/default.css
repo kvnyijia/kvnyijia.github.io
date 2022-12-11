@@ -109,6 +109,13 @@ article {
   text-transform: uppercase;
 }
 
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #292929;
 }
@@ -144,6 +151,12 @@ a {
   text-decoration: none;
 }
 
+
+a:hover {
+  color: #c2d994;
+  text-decoration: none;
+}
+
 a.inactive {
   color: #555555;
 }
@@ -151,6 +164,11 @@ a.inactive {
 a.follow-icon {
   font-size: 2.5rem;
   color: white;
+}
+
+a.follow-icon:hover {
+  font-size: 2.5rem;
+  color: #c2d994;
 }
 
 li {
@@ -186,10 +204,13 @@ img {
 }
 
 .avatar {
-  border-radius: 50%;
-  vertical-align: middle;
-  width: 10rem;
-  height: 10rem;
+  border-radius: 90%;
+  width: 17rem;
+}
+
+.avatar-company {
+  border-radius: 90%;
+  width: 13rem;
 }
 
 table {
@@ -263,15 +284,23 @@ footer {
 }
 
 .footer {
-  padding-top: 3rem;
+  /* padding-top: 3rem;   */
   padding-bottom: 1rem;
   font-size: 1.4rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.footer h3 {
+  padding-top: 3rem;
+  font-size: 2rem;
+  color: white;
+  font-family: Georgia, serif;
+  border-bottom: 0;
+}
+
 .footer h4 {
-  margin-bottom: 1rem;
-  font-size: 1.7rem;
+  margin-top: 0;
+  font-size: 1.5rem;
   font-weight: normal;
   text-transform: uppercase;
   color: white;
