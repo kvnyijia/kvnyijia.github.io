@@ -27,6 +27,8 @@
     </head>
 
     <body>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+        <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <!-- For syntax highlighting -->
@@ -38,7 +40,8 @@
               if (x.className === "") {
                 x.className += "responsive";
                 x2.className = "scrolled";
-              } else {
+              } 
+              else {
                 x.className = "";
               }
             }
@@ -47,11 +50,26 @@
 
             function scrollingFunction() {
                 var x2 = document.getElementById("nav-bar");
+                var but = document.getElementById("scroll2TopButton");
+
                 if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
                     x2.className = "scrolled";
-                } else {
+                } 
+                else {
                     x2.className = "";
                 }
+
+                if (document.body.scrollTop > window.innerHeight * 0.1 || 
+                    document.documentElement.scrollTop > window.innerHeight * 0.1) {
+                    but.className = "scroll2Top";
+                } 
+                else {
+                    but.className = "scroll2TopHide";
+                }
+            }
+
+            function scroll2Top() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         </script>
 
@@ -79,6 +97,10 @@
         <main role="main">
             $body$
         </main>
+
+        <button id="scroll2TopButton" onclick="scroll2Top()">
+            <i class="far fa-chevron-up"></i>
+        </button>
 
         <footer>
             <div class="flex-container">
