@@ -16,13 +16,15 @@ heading-img: images/mainHeader2.jpg
 
 <!-- > Click [here](/assets/yi-chia-chen-cv.pdf) to view my resume. -->
 
-Hi there! Welcome to my personal website! I'm Kevin, currently a MS CS student at Georgia Tech. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. I’m proficient in C++, Python, Java, and JavaScript.
+Hi there! Welcome to my personal website! I'm Kevin, currently a MS CS student at **Georgia Tech**. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. I’m proficient in **C++**, **Python**, **Java**, and **JavaScript**.
 
-Staring from 2022 Fall, I become a GRA at our school. Recently my work is using a C++ parallel programming model, called HClib, to implement message-passing programs. I try to establish formalism of message-passing program properties. Back to 2020, I was a research intern at the Academia Sinica, which is a National Academy at Taiwan. When I was a senior, I was also a data analyst intern at PIXNET. 
+In 2022 Fall, I was a GRA at our school. My work was using a C++ parallel programming model, called HClib, to implement message-passing programs. I try to establish formalism of message-passing program properties. Back to 2020, I was a research intern at the **Academia Sinica**, which is a National Academy at Taiwan. When I was a senior, I was also a data analyst intern at **PIXNET**. 
 
 In my sparse time, I like to take pictures, hiking, and stargazing. 
 
-You can also find me on [LinkedIn](https://www.linkedin.com/in/kvnyijia), [GitHub](https://github.com/kvnyijia), and [Twitter](https://twitter.com/kvnyijia), or take a look at my [resume](/assets/yi-chia-chen-cv.pdf).
+You can also find me on [LinkedIn](https://www.linkedin.com/in/kvnyijia), [GitHub](https://github.com/kvnyijia), [Twitter](https://twitter.com/kvnyijia), and [Instagram](https://www.instagram.com/kvnyijia/).
+
+Feel free to write me an <a onclick="mail2Me()">email</a>, or take a look at my [resume](/assets/yi-chia-chen-cv.pdf).
 
 </br>
 </br>

@@ -257,6 +257,7 @@ button:hover {
 }
 
 .scroll2Top {
+  padding: 0.2rem 0.6rem;
   position: fixed;
   top: 92%;
   left: 80%;
@@ -266,6 +267,7 @@ button:hover {
 }
 
 .scroll2TopHide {
+  padding: 0.2rem 0.6rem;
   border-radius: 50%;
 }
 
