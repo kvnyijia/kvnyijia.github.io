@@ -46,7 +46,12 @@
               }
             }
 
-            window.onscroll = function() { scrollingFunction() };
+            let userHasScrolled = false;
+
+            window.onscroll = function(e) {
+                userHasScrolled = true; 
+                scrollingFunction() 
+            };
 
             function scrollingFunction() {
                 var x2 = document.getElementById("nav-bar");
@@ -97,12 +102,15 @@
         </div>
 
         <h1 class="article-heading">$title$</h1>
+        <!-- $if(subtitle)$ -->
+        <!-- <h1 class="article-heading">$subtitle$</h1> -->
+        <!-- $endif$ -->
 
         <main role="main">
             $body$
         </main>
 
-        <button id="scroll2TopButton" onclick="scroll2Top()">
+        <button id="scroll2TopButton" class="scroll2TopHide" onclick="scroll2Top()">
             <i class="far fa-chevron-up"></i>
         </button>
 

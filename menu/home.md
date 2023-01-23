@@ -16,7 +16,9 @@ heading-img: images/mainHeader2.jpg
 
 <!-- > Click [here](/assets/yi-chia-chen-cv.pdf) to view my resume. -->
 
-Hi there! Welcome to my personal website! I'm Kevin, currently a MS CS student at **Georgia Tech**. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. I’m proficient in **C++**, **Python**, **Java**, and **JavaScript**.
+Hi there! Welcome to my personal website! 😊
+
+I'm Kevin Chen, currently a MS CS student at **Georgia Tech**. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. I’m proficient in **C++**, **Python**, **Java**, and **JavaScript**.
 
 In 2022 Fall, I was a GRA at our school. My work was using a C++ parallel programming model, called HClib, to implement message-passing programs. I try to establish formalism of message-passing program properties. Back to 2020, I was a research intern at the **Academia Sinica**, which is a National Academy at Taiwan. When I was a senior, I was also a data analyst intern at **PIXNET**. 
 
@@ -24,22 +26,12 @@ In my sparse time, I like to take pictures, hiking, and stargazing.
 
 You can also find me on [LinkedIn](https://www.linkedin.com/in/kvnyijia), [GitHub](https://github.com/kvnyijia), [Twitter](https://twitter.com/kvnyijia), and [Instagram](https://www.instagram.com/kvnyijia/).
 
-Feel free to write me an <a onclick="mail2Me()">email</a>, or take a look at my [resume](/assets/yi-chia-chen-cv.pdf).
+Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my [resume](/assets/yi-chia-chen-cv.pdf), since I'm **open to work**!
 
 </br>
 </br>
 
 ## Experience
-
-</br>
-
-<div class="center-container">
-  <img class="avatar-company" src="https://pbs.twimg.com/profile_images/1508986649803382786/PXo1P238_400x400.jpg" alt="drawing"/>
-</div>
-
-*Aug 2022 -- Present*</br>
-▎**Georgia Institute of Technology** Atlanta, GA</br>
-▎Graduate Research Assistant @ School of Computer Science</br>
 
 </br>
 
@@ -50,6 +42,16 @@ Feel free to write me an <a onclick="mail2Me()">email</a>, or take a look at my 
 *Aug 2021 -- Expected May 2023*</br>
 ▎**Georgia Institute of Technology** Atlanta, GA</br>
 ▎M.S. in Computer Science</br>
+
+</br>
+
+<div class="center-container">
+  <img class="avatar-company" src="https://pbs.twimg.com/profile_images/1508986649803382786/PXo1P238_400x400.jpg" alt="drawing"/>
+</div>
+
+*Aug 2022 -- Dec 2022*</br>
+▎**Georgia Institute of Technology** Atlanta, GA</br>
+▎Graduate Research Assistant @ School of Computer Science</br>
 
 </br>
 
