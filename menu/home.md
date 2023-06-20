@@ -28,10 +28,19 @@ You can also find me on [LinkedIn](https://www.linkedin.com/in/kvnyijia), [GitHu
 
 Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my [resume](/assets/yi-chia-chen-cv.pdf), since I'm **open to work**!
 
-<!-- **Programming:** `C++` `C` `C#` -->
+</br>
+
+<!-- ## Skills
+
+**Programming:** `C++` `C` `C#`
 
 </br>
-</br>
+
+## Certificates
+
+AWS Certified Solutions Architect - Associate
+
+</br> -->
 
 ## Experience
 
