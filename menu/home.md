@@ -30,9 +30,12 @@ Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my [
 
 </br>
 
-<!-- ## Skills
+## Skills
 
-**Programming:** `C++` `C` `C#`
+* **Programming:** Java, JavaScript, TypeScript, Python, Go, C++, C, C#
+* **Fullstack:** Spring Boot, Flask, Gin, Node, Express, React, Next.js, REST API, GraphQL
+* **DevOps:** Docker, Kubernetes, Postgres, MySQL, MongoDB, Redis, Git, Postman
+* **Cloud:** AWS (EKS, ECR, EC2, RDS, etc.)
 
 </br>
 
@@ -40,7 +43,7 @@ Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my [
 
 AWS Certified Solutions Architect - Associate
 
-</br> -->
+</br>
 
 ## Experience
 
@@ -50,7 +53,7 @@ AWS Certified Solutions Architect - Associate
   <img class="avatar-company" src="https://www.wsav.com/wp-content/uploads/sites/75/2016/05/georgia-tech-logo_38830824_ver1.0.gif?w=1280" alt="drawing"/>
 </div>
 
-*Aug 2021 -- Expected May 2023*</br>
+*Aug 2021 -- May 2023*</br>
 ▎**Georgia Institute of Technology** Atlanta, GA</br>
 ▎M.S. in Computer Science</br>
 
