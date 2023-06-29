@@ -14,7 +14,24 @@ heading-img: images/mainHeader2.jpg
   <img class="avatar" src="images/avatar.jpg" alt="Avatar">
 </div>
 
-<!-- > Click [here](/assets/yi-chia-chen-cv.pdf) to view my resume. -->
+<div class="center-container">
+  <span class="button">
+    <a 
+      href="/assets/yi-chia-chen-cv.pdf"
+      class="button"
+    >
+      SEE RESUME
+    </a>
+  </span>
+  <span class="button">
+    <a 
+      onclick="mail2Me()"
+      class="button"
+    >
+      SEND EMAIL
+    </a>
+  </span>
+</div>
 
 Hi there! Welcome to my personal website! 😊
 
