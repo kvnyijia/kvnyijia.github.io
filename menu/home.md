@@ -17,7 +17,7 @@ heading-img: images/mainHeader2.jpg
 <div class="center-container">
   <span class="button">
     <a 
-      href="/assets/yi-chia-chen-cv.pdf"
+      href="/assets/Kevin_Chen_resume.pdf"
       class="button"
     >
       SEE RESUME
@@ -43,7 +43,7 @@ In my sparse time, I like to take pictures, hiking, and stargazing.
 
 You can also find me on [LinkedIn](https://www.linkedin.com/in/kvnyijia), [GitHub](https://github.com/kvnyijia), [Twitter](https://twitter.com/kvnyijia), and [Instagram](https://www.instagram.com/kvnyijia/).
 
-Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my [resume](/assets/yi-chia-chen-cv.pdf), since I'm **open to work**!
+Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my [resume](/assets/Kevin_Chen_resume.pdf), since I'm **open to work**!
 
 </br>
 
