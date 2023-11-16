@@ -116,9 +116,3 @@ AWS Certified Solutions Architect - Associate
 
 </br>
 </br>
-
-## Recent Posts
-
-</br>
-
-There is no post now!
