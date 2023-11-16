@@ -33,32 +33,9 @@ heading-img: images/mainHeader2.jpg
   </span>
 </div>
 
-Hi there! Welcome to my personal website! 😊
+Hi there! Welcome to my personal website! 😊 
 
-I'm Kevin Chen, currently a MS CS student at **Georgia Tech**. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. I’m proficient in **C++**, **Python**, **Java**, and **JavaScript**.
-
-In 2022 Fall, I was a GRA at our school. My work was using a C++ parallel programming model, called HClib, to implement message-passing programs. I try to establish formalism of message-passing program properties. Back to 2020, I was a research intern at the **Academia Sinica**, which is a National Academy at Taiwan. When I was a senior, I was also a data analyst intern at **PIXNET**. 
-
-In my sparse time, I like to take pictures, hiking, and stargazing. 
-
-You can also find me on [LinkedIn](https://www.linkedin.com/in/kvnyijia), [GitHub](https://github.com/kvnyijia), [Twitter](https://twitter.com/kvnyijia), and [Instagram](https://www.instagram.com/kvnyijia/).
-
-Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my [resume](/assets/Kevin_Chen_resume.pdf), since I'm **open to work**!
-
-</br>
-
-## Skills
-
-* **Programming:** Java, JavaScript, TypeScript, Python, Go, C++, C, C#
-* **Fullstack:** Spring Boot, Flask, Gin, Node, Express, React, Next.js, REST API, GraphQL
-* **DevOps:** Docker, Kubernetes, Postgres, MySQL, MongoDB, Redis, Git, Postman
-* **Cloud:** AWS (EKS, ECR, EC2, RDS, etc.)
-
-</br>
-
-## Certificates
-
-AWS Certified Solutions Architect - Associate
+I'm Kevin Chen, a CS master's graduate from **Georgia Tech**. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my [resume](/assets/Kevin_Chen_resume.pdf), since I'm **open to work**!
 
 </br>
 
@@ -67,12 +44,12 @@ AWS Certified Solutions Architect - Associate
 </br>
 
 <div class="center-container">
-  <img class="avatar-company" src="https://www.wsav.com/wp-content/uploads/sites/75/2016/05/georgia-tech-logo_38830824_ver1.0.gif?w=1280" alt="drawing"/>
+  <img class="avatar-company" src="/images/aerotract_logo.png" alt="drawing"/>
 </div>
 
-*Aug 2021 -- May 2023*</br>
-▎**Georgia Institute of Technology** Atlanta, GA</br>
-▎M.S. in Computer Science</br>
+*Sep 2023 -- Present*</br>
+▎**AeroTract, LLC** Albany, OR</br>
+▎Software Engineer Intern</br>
 
 </br>
 
@@ -106,6 +83,20 @@ AWS Certified Solutions Architect - Associate
 
 </br>
 
+## Education
+
+</br>
+
+<div class="center-container">
+  <img class="avatar-company" src="https://www.wsav.com/wp-content/uploads/sites/75/2016/05/georgia-tech-logo_38830824_ver1.0.gif?w=1280" alt="drawing"/>
+</div>
+
+*Aug 2021 -- May 2023*</br>
+▎**Georgia Institute of Technology** Atlanta, GA</br>
+▎M.S. in Computer Science</br>
+
+</br>
+
 <div class="center-container">
   <img class="avatar-company" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/National_Cheng_Kung_University_logo.svg/1920px-National_Cheng_Kung_University_logo.svg.png" alt="drawing"/>
 </div>
@@ -115,4 +106,18 @@ AWS Certified Solutions Architect - Associate
 ▎B.S. in Computer Science</br>
 
 </br>
+
+## Skills
+
+* **Programming:** Java, JavaScript, TypeScript, Python, Go, C++, C, C#
+* **Fullstack:** Spring Boot, Flask, Gin, Node, Express, React, Next.js, REST API, GraphQL
+* **DevOps:** Docker, Kubernetes, Postgres, MySQL, MongoDB, Redis, Git, Postman
+* **Cloud:** AWS (EKS, ECR, EC2, RDS, etc.)
+
+</br>
+
+## Certificates
+
+AWS Certified Solutions Architect - Associate [🔗](https://www.credly.com/badges/a42a7267-ad38-4509-952e-1493301e01b3/linked_in_profile)
+
 </br>
