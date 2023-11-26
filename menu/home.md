@@ -109,10 +109,10 @@ I'm Kevin Chen, a CS master's graduate from **Georgia Tech**. 🐝 I’m passion
 
 ## Skills
 
-* **Programming:** Java, JavaScript, TypeScript, Python, Go, C++, C, C#
-* **Fullstack:** Spring Boot, Flask, Gin, Node, Express, React, Next.js, REST API, GraphQL
+* **Programming:** Java, JavaScript, TypeScript, Python, Go, Swift, C++, C, C#
+* **Fullstack:** Spring Boot, Flask, Gin, SwiftUI, Node, Express, React, Next.js, REST API, GraphQL, gRPC
 * **DevOps:** Docker, Kubernetes, Postgres, MySQL, MongoDB, Redis, Git, Postman
-* **Cloud:** AWS (EKS, ECR, EC2, RDS, etc.)
+* **Cloud:** AWS (EKS, ECR, EC2, RDS, etc.), GCP (BigQuery, Data Studio)
 
 </br>
 
