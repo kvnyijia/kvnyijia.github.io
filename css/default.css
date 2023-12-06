@@ -333,6 +333,10 @@ footer {
   justify-content: space-between;
 }
 
+.footer-links-flex-container {
+  display: flex;
+}
+
 .footer {
   /* padding-top: 3rem;   */
   padding-bottom: 1rem;
@@ -435,9 +439,16 @@ footer {
     display: block;
     text-align: left;
   }
-  .footer {
-    padding-right: 5%;    /* 5% is used to match main's default padding */
+  .footer-links-flex-container {
     padding-left: 5%;
+    padding-right: 5%; 
+    width: 300px;   
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .footer {
+    /* padding-right: 5%; */  /* 5% is used to match main's default padding */
+    /* padding-left: 5%;  */
   }
   .preview-heading {
     width: 10rem;
@@ -478,9 +489,16 @@ footer {
     display: block;
     text-align: left;
   }
+  .footer-links-flex-container {
+    padding-left: 5%;         /* 5% is used to match main's default padding*/
+    padding-right: 5%; 
+    width: 300px;   
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
   .footer {
-    padding-right: 5%;           /* 5% is used to match main's default padding */
-    padding-left: 5%;
+    /* padding-right: 5%; */   /* 5% is used to match main's default padding */
+    /* padding-left: 5%;  */
   }
   .preview-heading {
     width: 12rem;
@@ -523,6 +541,12 @@ footer {
   .flex-container {
     margin: 0 auto;
     width: var(--article-width);    /* To match article's width */
+  }
+  .footer-links-flex-container {
+    padding: 0;
+    margin: 0 auto;
+    width: var(--article-width);    /* To match article's width */
+    justify-content: space-between;
   }
   .footer {
     padding-right: 0;
