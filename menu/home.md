@@ -19,6 +19,7 @@ heading-img: images/mainHeader2.jpg
     <a 
       href="/assets/Kevin_Chen_resume.pdf"
       class="button"
+      target="_blank"
     >
       SEE RESUME
     </a>
@@ -35,7 +36,38 @@ heading-img: images/mainHeader2.jpg
 
 Hi there! Welcome to my personal website! 😊 
 
-I'm Kevin Chen, a CS master's graduate from **Georgia Tech**. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my [resume](/assets/Kevin_Chen_resume.pdf), since I'm **open to work**!
+I'm Kevin Chen, a CS master's graduate from **Georgia Tech**. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my 
+<a 
+  href="/assets/Kevin_Chen_resume.pdf"
+  target="_blank"
+>
+resume
+</a>
+, since I'm **open to work**!
+
+</br>
+
+## Education
+
+</br>
+
+<div class="center-container">
+  <img class="avatar-company" src="https://www.wsav.com/wp-content/uploads/sites/75/2016/05/georgia-tech-logo_38830824_ver1.0.gif?w=1280" alt="drawing"/>
+</div>
+
+*Aug 2021 -- May 2023*</br>
+▎**Georgia Institute of Technology** Atlanta, GA</br>
+▎M.S. in Computer Science</br>
+
+</br>
+
+<div class="center-container">
+  <img class="avatar-company" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/National_Cheng_Kung_University_logo.svg/1920px-National_Cheng_Kung_University_logo.svg.png" alt="drawing"/>
+</div>
+
+*Sep 2015 -- June 2020*</br>
+▎**National Cheng Kung University** Tainan, Taiwan</br>
+▎B.S. in Computer Science</br>
 
 </br>
 
@@ -80,30 +112,6 @@ I'm Kevin Chen, a CS master's graduate from **Georgia Tech**. 🐝 I’m passion
 *Aug 2019 -- Dec 2019*</br>
 ▎**PIXNET** Taipei, Taiwan</br>
 ▎Data Analyst Intern @ Data Analysis Team</br>
-
-</br>
-
-## Education
-
-</br>
-
-<div class="center-container">
-  <img class="avatar-company" src="https://www.wsav.com/wp-content/uploads/sites/75/2016/05/georgia-tech-logo_38830824_ver1.0.gif?w=1280" alt="drawing"/>
-</div>
-
-*Aug 2021 -- May 2023*</br>
-▎**Georgia Institute of Technology** Atlanta, GA</br>
-▎M.S. in Computer Science</br>
-
-</br>
-
-<div class="center-container">
-  <img class="avatar-company" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/National_Cheng_Kung_University_logo.svg/1920px-National_Cheng_Kung_University_logo.svg.png" alt="drawing"/>
-</div>
-
-*Sep 2015 -- June 2020*</br>
-▎**National Cheng Kung University** Tainan, Taiwan</br>
-▎B.S. in Computer Science</br>
 
 </br>
 
