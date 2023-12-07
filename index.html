@@ -19,6 +19,8 @@
         <!-- <meta name="description" property="og:description" content="A software developer's Notes"/> -->
 
         <title> kvnyijia </title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.jpg">
+
         <link rel="stylesheet" href="./css/default.css">
         <!-- For icons -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
@@ -80,13 +82,13 @@
             }
 
             function mail2Me() {
-                window.location.href = "mailto:" + ["kvnyijia", "gmail.com"].join("@");
+                window.open("mailto:" + ["kvnyijia", "gmail.com"].join("@"), "_blank");
             }
         </script>
 
         <header id="nav-bar">
             <nav id="myTopnav">
-                <a href="./">kvnyijia</a>
+                <a href="./">Kevin Chen</a>
                 <!-- <a href="/about.html">About</a> -->
                 <a href="./archive/">Archive</a>
                 <a href="./tags/">Tags</a>
@@ -115,10 +117,22 @@
 <p><img class="avatar" src="images/avatar.jpg" alt="Avatar"></p>
 </div>
 <div class="center-container">
-<p><span class="button"> <a href="./assets/Kevin_Chen_resume.pdf" class="button"> SEE RESUME </a> </span> <span class="button"> <a onclick="mail2Me()" class="button"> SEND EMAIL </a> </span></p>
+<p><span class="button"> <a href="./assets/Kevin_Chen_resume.pdf" class="button" target="_blank"> SEE RESUME </a> </span> <span class="button"> <a onclick="mail2Me()" class="button"> SEND EMAIL </a> </span></p>
 </div>
 <p>Hi there! Welcome to my personal website! 😊</p>
-<p>I’m Kevin Chen, a CS master’s graduate from <strong>Georgia Tech</strong>. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my <a href="./assets/Kevin_Chen_resume.pdf">resume</a>, since I’m <strong>open to work</strong>!</p>
+<p>I’m Kevin Chen, a CS master’s graduate from <strong>Georgia Tech</strong>. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my <a href="./assets/Kevin_Chen_resume.pdf" target="_blank"> resume </a> , since I’m <strong>open to work</strong>!</p>
+<p></br></p>
+<h2 id="education">Education</h2>
+<p></br></p>
+<div class="center-container">
+<p><img class="avatar-company" src="https://www.wsav.com/wp-content/uploads/sites/75/2016/05/georgia-tech-logo_38830824_ver1.0.gif?w=1280" alt="drawing" /></p>
+</div>
+<p><em>Aug 2021 – May 2023</em></br> ▎<strong>Georgia Institute of Technology</strong> Atlanta, GA</br> ▎M.S. in Computer Science</br></p>
+<p></br></p>
+<div class="center-container">
+<p><img class="avatar-company" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/National_Cheng_Kung_University_logo.svg/1920px-National_Cheng_Kung_University_logo.svg.png" alt="drawing" /></p>
+</div>
+<p><em>Sep 2015 – June 2020</em></br> ▎<strong>National Cheng Kung University</strong> Tainan, Taiwan</br> ▎B.S. in Computer Science</br></p>
 <p></br></p>
 <h2 id="experience">Experience</h2>
 <p></br></p>
@@ -141,18 +155,6 @@
 <p><img class="avatar-company" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/PIXNET_Logo.png/1200px-PIXNET_Logo.png" alt="drawing" /></p>
 </div>
 <p><em>Aug 2019 – Dec 2019</em></br> ▎<strong>PIXNET</strong> Taipei, Taiwan</br> ▎Data Analyst Intern @ Data Analysis Team</br></p>
-<p></br></p>
-<h2 id="education">Education</h2>
-<p></br></p>
-<div class="center-container">
-<p><img class="avatar-company" src="https://www.wsav.com/wp-content/uploads/sites/75/2016/05/georgia-tech-logo_38830824_ver1.0.gif?w=1280" alt="drawing" /></p>
-</div>
-<p><em>Aug 2021 – May 2023</em></br> ▎<strong>Georgia Institute of Technology</strong> Atlanta, GA</br> ▎M.S. in Computer Science</br></p>
-<p></br></p>
-<div class="center-container">
-<p><img class="avatar-company" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/National_Cheng_Kung_University_logo.svg/1920px-National_Cheng_Kung_University_logo.svg.png" alt="drawing" /></p>
-</div>
-<p><em>Sep 2015 – June 2020</em></br> ▎<strong>National Cheng Kung University</strong> Tainan, Taiwan</br> ▎B.S. in Computer Science</br></p>
 <p></br></p>
 <h2 id="skills">Skills</h2>
 <ul>
@@ -187,9 +189,9 @@
       </div>
       <p>An online flashcard maker helps you create and study flashcards.</p>
       <div class="flex-row">
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/WordApp"><i class="fab fa-github"></i><span>Repo of Server</span></a>
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/word-app-ios"><i class="fab fa-github"></i><span>Repo of iOS</span></a>
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/word-app-web"><i class="fab fa-github"></i><span>Repo of Frontend</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/WordApp" target="_blank"><i class="fab fa-github"></i><span>Repo of Server</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/word-app-ios" target="_blank"><i class="fab fa-github"></i><span>Repo of iOS</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/word-app-web" target="_blank"><i class="fab fa-github"></i><span>Repo of Frontend</span></a>
       </div>
     </main>
   </div>
@@ -211,8 +213,8 @@
       </div>
       <p>A lightweight content rating system where users can create, upvote and downvote posts.</p>
       <div class="flex-row">
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/mini-reddit"><i class="fab fa-github"></i><span>Repo of Server</span></a>
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/mini-reddit-web"><i class="fab fa-github"></i><span>Repo of Frontend</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/mini-reddit" target="_blank"><i class="fab fa-github"></i><span>Repo of Server</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/mini-reddit-web" target="_blank"><i class="fab fa-github"></i><span>Repo of Frontend</span></a>
       </div>
     </main>
   </div>
@@ -233,8 +235,8 @@
       </div>
       <p>A bank web application to manage transactions.</p>
       <div class="flex-row">
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/bank-app"><i class="fab fa-github"></i><span>Repo of Server</span></a>
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/bank-app-web"><i class="fab fa-github"></i><span>Repo of Frontend</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/bank-app" target="_blank"><i class="fab fa-github"></i><span>Repo of Server</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/bank-app-web" target="_blank"><i class="fab fa-github"></i><span>Repo of Frontend</span></a>
       </div>
     </main>
   </div>
@@ -252,7 +254,7 @@
       </div>
       <p>Mobile app for finding restaurants based on personal taste preference.</p>
       <div class="flex-row">
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/Taste-react-native"><i class="fab fa-github"></i><span>Repo</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/Taste-react-native" target="_blank"><i class="fab fa-github"></i><span>Repo</span></a>
       </div>
     </main>
   </div>
@@ -272,7 +274,7 @@
       </div>
       <p>Book recommender system that tells you what to read next using 5 different approaches.</p>
       <div class="flex-row">
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/dva-team24"><i class="fab fa-github"></i><span>Repo</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/dva-team24" target="_blank"><i class="fab fa-github"></i><span>Repo</span></a>
       </div>
     </main>
   </div>
@@ -292,8 +294,8 @@
       </div>
       <p>Air quality data collection, analysis & prediction from scratch at NCKU.</p>
       <div class="flex-row">
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/pm2.5_training"><i class="fab fa-github"></i><span>Repo</span></a>
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/data_display"><i class="fab fa-github"></i><span>Repo of CLI Tool</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/pm2.5_training" target="_blank"><i class="fab fa-github"></i><span>Repo</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/data_display" target="_blank"><i class="fab fa-github"></i><span>Repo of CLI Tool</span></a>
       </div>
     </main>
   </div>
@@ -311,7 +313,7 @@
       </div>
       <p>A budgeting app with minigame inside, making spend tracking more enjoyable!</p>
       <div class="flex-row">
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/Finance-Hero"><i class="fab fa-github"></i><span>Repo</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/Finance-Hero" target="_blank"><i class="fab fa-github"></i><span>Repo</span></a>
       </div>
     </main>
   </div>
@@ -328,7 +330,7 @@
       </div>
       <p>A classic parkour game made with Unity Game Engine.</p>
       <div class="flex-row">
-        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/WP_runrun"><i class="fab fa-github"></i><span>Repo</span></a>
+        <a class="btn btn-icon btn-github" href="https://github.com/kvnyijia/WP_runrun" target="_blank"><i class="fab fa-github"></i><span>Repo</span></a>
       </div>
     </main>
   </div>
@@ -372,10 +374,10 @@
                     <h4>Follow Me</h4>
                     <ul>
                         <li><a class="follow-icon" onclick="mail2Me()"><i class="fas fa-envelope"></i></a></li> 
-                        <li><a class="follow-icon" href="https://www.linkedin.com/in/kvnyijia/"><i class="fab fa-linkedin"></i></a> </li> 
-                        <li><a class="follow-icon" href="https://github.com/kvnyijia"><i class="fab fa-github"></i></a> </li> 
-                        <li> <a class="follow-icon" href="https://twitter.com/kvnyijia"><i class="fab fa-twitter"></i></a> </li> 
-                        <li><a class="follow-icon" href="https://www.instagram.com/kvnyijia/"><i class="fab fa-instagram"></i></a> </li> 
+                        <li><a class="follow-icon" href="https://www.linkedin.com/in/kvnyijia/" target="_blank"><i class="fab fa-linkedin"></i></a> </li> 
+                        <li><a class="follow-icon" href="https://github.com/kvnyijia" target="_blank"><i class="fab fa-github"></i></a> </li> 
+                        <li> <a class="follow-icon" href="https://twitter.com/kvnyijia" target="_blank"><i class="fab fa-twitter"></i></a> </li> 
+                        <li><a class="follow-icon" href="https://www.instagram.com/kvnyijia/" target="_blank"><i class="fab fa-instagram"></i></a> </li> 
                     </ul>
                 </div>
                 <div class="footer">
@@ -387,7 +389,7 @@
                 <div class="footer" id="div-links">
                     <p>
                         Site proudly powered by
-                        <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+                        <a href="http://jaspervdj.be/hakyll" target="_blank">Hakyll</a>
                     </p>
                 </div>
             </div>

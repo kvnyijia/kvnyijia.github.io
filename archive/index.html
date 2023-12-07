@@ -19,6 +19,8 @@
         <!-- <meta name="description" property="og:description" content="A software developer's Notes"/> -->
 
         <title> Archive | kvnyijia </title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.jpg">
+
         <link rel="stylesheet" href="../css/default.css">
         <!-- For icons -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
@@ -80,13 +82,13 @@
             }
 
             function mail2Me() {
-                window.location.href = "mailto:" + ["kvnyijia", "gmail.com"].join("@");
+                window.open("mailto:" + ["kvnyijia", "gmail.com"].join("@"), "_blank");
             }
         </script>
 
         <header id="nav-bar">
             <nav id="myTopnav">
-                <a href="../">kvnyijia</a>
+                <a href="../">Kevin Chen</a>
                 <!-- <a href="/about.html">About</a> -->
                 <a href="../archive/">Archive</a>
                 <a href="../tags/">Tags</a>
@@ -142,10 +144,10 @@
                     <h4>Follow Me</h4>
                     <ul>
                         <li><a class="follow-icon" onclick="mail2Me()"><i class="fas fa-envelope"></i></a></li> 
-                        <li><a class="follow-icon" href="https://www.linkedin.com/in/kvnyijia/"><i class="fab fa-linkedin"></i></a> </li> 
-                        <li><a class="follow-icon" href="https://github.com/kvnyijia"><i class="fab fa-github"></i></a> </li> 
-                        <li> <a class="follow-icon" href="https://twitter.com/kvnyijia"><i class="fab fa-twitter"></i></a> </li> 
-                        <li><a class="follow-icon" href="https://www.instagram.com/kvnyijia/"><i class="fab fa-instagram"></i></a> </li> 
+                        <li><a class="follow-icon" href="https://www.linkedin.com/in/kvnyijia/" target="_blank"><i class="fab fa-linkedin"></i></a> </li> 
+                        <li><a class="follow-icon" href="https://github.com/kvnyijia" target="_blank"><i class="fab fa-github"></i></a> </li> 
+                        <li> <a class="follow-icon" href="https://twitter.com/kvnyijia" target="_blank"><i class="fab fa-twitter"></i></a> </li> 
+                        <li><a class="follow-icon" href="https://www.instagram.com/kvnyijia/" target="_blank"><i class="fab fa-instagram"></i></a> </li> 
                     </ul>
                 </div>
                 <div class="footer">
@@ -157,7 +159,7 @@
                 <div class="footer" id="div-links">
                     <p>
                         Site proudly powered by
-                        <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+                        <a href="http://jaspervdj.be/hakyll" target="_blank">Hakyll</a>
                     </p>
                 </div>
             </div>
