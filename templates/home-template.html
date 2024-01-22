@@ -3,12 +3,12 @@
 
     $body$
 
-    <h2>Projects</h2>
+    <h2 id="projects" class="anchor-link">Projects</h2>
     $partial("templates/project-template.html")$
 
-    <h2>Recent Posts</h2>
+    <h2 id="articles" class="anchor-link">Articles</h2>
     </br>
-    <p>There is no post now!</p>
+    <p>There is no articles now!</p>
 
 $for(posts)$
     <div class="preview-flex-container">
@@ -32,5 +32,34 @@ $for(posts)$
     
     $sep$<hr>
 $endfor$
+    </br>
+
+    <h2 id="contact" class="anchor-link">Contact</h2>
+    </br>
+    </br>
+    
+    <div class="center-container">
+        <img class="avatar" src="images/avatar.jpg" alt="Avatar">
+    </div>
+
+    <div class="center-container">
+        <p><span class="button">
+          <a 
+            href="/assets/Kevin_Chen_resume.pdf"
+            class="button"
+            target="_blank"
+          >
+            SEE RESUME
+          </a>
+        </span>
+        <span class="button">
+          <a 
+            onclick="mail2Me()"
+            class="button"
+          >
+            SEND EMAIL
+          </a>
+        </span></p>
+    </div>
     </br>
 </article>

@@ -4,7 +4,7 @@ home: y
 heading-img: images/mainHeader2.jpg
 ---
 
-## About Me
+## About {.anchor-link}
 
 </br>
 
@@ -14,29 +14,9 @@ heading-img: images/mainHeader2.jpg
   <img class="avatar" src="images/avatar.jpg" alt="Avatar">
 </div>
 
-<div class="center-container">
-  <span class="button">
-    <a 
-      href="/assets/Kevin_Chen_resume.pdf"
-      class="button"
-      target="_blank"
-    >
-      SEE RESUME
-    </a>
-  </span>
-  <span class="button">
-    <a 
-      onclick="mail2Me()"
-      class="button"
-    >
-      SEND EMAIL
-    </a>
-  </span>
-</div>
+Hi there! My name is **Kevin Chen**. Welcome to my personal website! 😊 
 
-Hi there! Welcome to my personal website! 😊 
-
-I'm Kevin Chen, a CS master's graduate from **Georgia Tech**. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my 
+I'm a recent CS master's graduate from **Georgia Tech**. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my 
 <a 
   href="/assets/Kevin_Chen_resume.pdf"
   target="_blank"
@@ -47,7 +27,7 @@ resume
 
 </br>
 
-## Education
+## Education {.anchor-link}
 
 </br>
 
@@ -71,7 +51,7 @@ resume
 
 </br>
 
-## Experience
+## Experience {.anchor-link}
 
 </br>
 
@@ -115,7 +95,7 @@ resume
 
 </br>
 
-## Skills
+## Skills {.anchor-link}
 
 * **Programming:** Java, JavaScript, TypeScript, Python, Go, Swift, C++, C, C#
 * **Fullstack:** Spring Boot, Flask, Gin, SwiftUI, Node, Express, React, Next.js, REST API, GraphQL, gRPC
@@ -124,7 +104,7 @@ resume
 
 </br>
 
-## Certificates
+## Certificates {.anchor-link}
 
 AWS Certified Solutions Architect - Associate [🔗](https://www.credly.com/badges/a42a7267-ad38-4509-952e-1493301e01b3/linked_in_profile)
 
