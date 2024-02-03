@@ -56,12 +56,21 @@
             function scrollingFunction() {
                 var x2 = document.getElementById("nav-bar");
                 var but = document.getElementById("scroll2TopButton");
+                var img = document.getElementById("heading-img");
 
                 if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
                     x2.className = "scrolled";
                 } 
                 else {
                     x2.className = "";
+                }
+
+                if (document.body.scrollTop > window.innerHeight * 1.1 || 
+                    document.documentElement.scrollTop > window.innerHeight * 1.1
+                ) {
+                    img.className = "heading-img-scrolled";
+                } else {
+                    img.className = "heading-img";
                 }
 
                 if (document.body.scrollTop > window.innerHeight * 0.1 || 
@@ -84,14 +93,14 @@
 
         <header id="nav-bar">
             <nav id="myTopnav">
-                <a href="./">Kevin Chen</a>
+                <a onclick="toggleFunction()" href="./">Kevin Chen</a>
                 <!-- <a href="/about.html">About</a> -->
-                <a href="./#about">About</a>
-                <a href="./#experience">Experience</a>
-                <a href="./#projects">Projects</a>
-                <a href="./#contact">Contact</a>
-                <a href="./archive/">Archive</a>
-                <a href="./tags/">Tags</a>
+                <a onclick="toggleFunction()" href="./#about">About</a>
+                <a onclick="toggleFunction()" href="./#experience">Experience</a>
+                <a onclick="toggleFunction()" href="./#projects">Projects</a>
+                <a onclick="toggleFunction()" href="./#contact">Contact</a>
+                <a onclick="toggleFunction()" href="./archive/">Archive</a>
+                <a onclick="toggleFunction()" href="./tags/">Tags</a>
                 <a href="javascript:void(0);" class="icon" onclick="toggleFunction()">
                     <i class="fas fa-bars"></i>
                 </a>
@@ -103,8 +112,12 @@
     
         </div>
 
-        <h1 class="article-heading">About</h1>
+        <div class="h1div">
+            <h1>About</h1>
+        </div>
+
         <!--  -->
+        <br>
 
         <main class="body-main" role="main">
             <article>
