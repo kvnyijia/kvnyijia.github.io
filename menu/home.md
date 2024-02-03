@@ -1,5 +1,5 @@
 ---
-title: "@kvnyijia"
+title: "Hello there 👋</br>I’m Kevin Chen"
 home: y
 heading-img: images/mainHeader2.jpg
 ---
@@ -14,16 +14,20 @@ heading-img: images/mainHeader2.jpg
   <img class="avatar" src="images/avatar.jpg" alt="Avatar">
 </div>
 
-Hi there! My name is **Kevin Chen**. Welcome to my personal website! 😊 
+### Kevin Chen
 
-I'm a recent CS master's graduate from **Georgia Tech**. 🐝 I’m passionate about software development, web development, data engineering, and machine learning. Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my 
+Recent MS CS graduate from **Georgia Tech** 🐝 
+
+I’m passionate about software development, web development, data engineering, and machine learning. 
+
+<!-- Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my 
 <a 
   href="/assets/Kevin_Chen_resume.pdf"
   target="_blank"
 >
 resume
 </a>
-, since I'm **open to work**!
+, since I'm **open to work**! -->
 
 </br>
 

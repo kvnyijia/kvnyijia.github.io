@@ -74,30 +74,46 @@ nav a.icon {
   margin: 0;
   padding: 0;
   text-align: center;
-  position: absolute;
+  position: fixed;
   /* top: var(--header-heigh); */
-  z-index: 0;
+  z-index: 1;
   background-size: 100%;
 }
+
+/* .heading-img-scrolled {
+  background-color: #ffffff;
+} */
 
 main.body-main {
   background-color: #ffffff;
   width: 100%;
   position: relative;
-  top: var(--header-heigh);
+  /* top: var(--header-heigh); */
+  top: 100vh;
   z-index: 1;
 }
 
-h1.article-heading {
+.h1div {
+  width: 100%;
+  text-align: center;
+  background-color: #000000;
+  z-index: 1;
+}
+
+.h1div > h1 {
+  width: 100%;
   padding-top: 50vh;
-  padding-bottom: 50vh;
+  /* padding-bottom: 50vh; */
   padding-right: 2.5%;
   padding-left: 2.5%;
-  text-align: center;
+  /* text-align: center; */
   font-size: 3.5rem;
   color: #ffffff;
-  position: relative;
+  position: absolute;
+  /* position: relative; */
   z-index: 1;
+  transform: translate(-50%, 0);
+  display: inline-block;
 }
 
 article {
@@ -324,7 +340,7 @@ span.page-nav-next {
 footer {
   color: white;
   background: #506268;
-  top: var(--header-heigh);
+  top: 100vh;
   position: relative;
   z-index: 1;
 }
