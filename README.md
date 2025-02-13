@@ -23,6 +23,7 @@ $ stack install hakyll
 
 ```bash
 $ stack build              # Compile site.hs
-$ stack site exec build    # Generate source code for the sites
-$ stack site exec watch    # Preview on localhost
+$ stack exec site build    # Generate source code for the sites
+$ stack exec site watch    # Preview on localhost
+$ stack exec site rebuild
 ```
