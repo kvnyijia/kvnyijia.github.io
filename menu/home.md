@@ -18,7 +18,7 @@ heading-img: images/mainHeader2.jpg
 
 Recent MS CS graduate from **Georgia Tech** 🐝 
 
-I’m passionate about software development, web development, data engineering, and machine learning. 
+I’m passionate about software development, web development, and mobile development. 
 
 <!-- Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my 
 <a 
@@ -29,9 +29,9 @@ resume
 </a>
 , since I'm **open to work**! -->
 
-</br>
+<!-- </br> -->
 
-## Education {.anchor-link}
+<!-- ## Education {.anchor-link}
 
 </br>
 
@@ -112,4 +112,4 @@ resume
 
 AWS Certified Solutions Architect - Associate [🔗](https://www.credly.com/badges/a42a7267-ad38-4509-952e-1493301e01b3/linked_in_profile)
 
-</br>
+</br> -->

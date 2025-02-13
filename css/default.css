@@ -69,7 +69,7 @@ nav a.icon {
 }
 
 .heading-img {
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -453,7 +453,10 @@ footer {
     display: block;
   }
   nav.responsive {
-    height: 27rem;        /* height of mobile expanded nav-bar */
+    /* height of mobile expanded nav-bar 
+     * use 27rem if have 7 items
+     */
+    height: 20rem;
   }
   nav.responsive a {
     float: none;
@@ -503,7 +506,7 @@ footer {
     display: block;
   }
   nav.responsive {
-    height: 27rem;        /* height of mobile expanded nav-bar */
+    height: 20rem;        /* height of mobile expanded nav-bar */
   }
   nav.responsive a {
     float: none;
