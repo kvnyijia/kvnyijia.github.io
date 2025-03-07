@@ -16,9 +16,9 @@ heading-img: images/mainHeader2.jpg
 
 ### Kevin Chen
 
-Recent MS CS graduate from **Georgia Tech** 🐝 
+<!-- Recent MS CS graduate from **Georgia Tech** 🐝  -->
 
-I’m passionate about software development, web development, and mobile development. 
+<!-- I’m passionate about software development, web development, and mobile development.  -->
 
 <!-- Feel free to write me an <a onclick="mail2Me()">email</a> or take a look at my 
 <a 

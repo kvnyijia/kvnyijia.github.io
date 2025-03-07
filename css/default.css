@@ -192,6 +192,27 @@ a.follow-icon:hover {
   color: #c2d994;
 }
 
+a.home-follow-icon {
+  font-size: 2.5rem;
+  color: grey;
+}
+
+a.home-follow-icon:hover {
+  font-size: 2.5rem;
+  color: #c2d994;
+}
+
+.home-follow-icon-div ul {
+  padding-left: 0;
+  padding-bottom: 3rem;
+  list-style-type: none;
+}
+
+.home-follow-icon-div li {
+  padding: 0 6px 0 0;
+  display: inline-block;
+}
+
 a.button {
   color: white;
 }
